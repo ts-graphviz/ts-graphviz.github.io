@@ -2,4 +2,6 @@
 sidebar_position: 1
 ---
 
-# Intro
+```bash npm2yarn
+npm install ts-graphviz
+```

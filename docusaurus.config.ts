@@ -1,6 +1,8 @@
 import type * as Preset from '@docusaurus/preset-classic';
+import npm2yarn from '@docusaurus/remark-plugin-npm2yarn';
 import type { Config } from '@docusaurus/types';
 import { themes as prismThemes } from 'prism-react-renderer';
+
 
 const config: Config = {
   title: 'ts-graphviz',
@@ -27,11 +29,22 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           editUrl:
             'https://github.com/ts-graphviz/ts-graphviz/tree/main/website/',
+          remarkPlugins: [
+            [npm2yarn, { sync: true, converters: ['yarn', 'pnpm'] }],
+          ],
         },
         blog: {
           showReadingTime: true,
           editUrl:
             'https://github.com/ts-graphviz/ts-graphviz/tree/main/website/',
+          remarkPlugins: [
+            [npm2yarn, { sync: true, converters: ['yarn', 'pnpm'] }],
+          ],
+        },
+        pages: {
+          remarkPlugins: [
+            [npm2yarn, { sync: true, converters: ['yarn', 'pnpm'] }],
+          ],
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -116,6 +129,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+      additionalLanguages: ['dot'],
     },
   } satisfies Preset.ThemeConfig,
 };
