@@ -1,5 +1,5 @@
-import clsx from 'clsx';
 import Heading from '@theme/Heading';
+import clsx from 'clsx';
 import styles from './styles.module.css';
 
 type FeatureItem = {
@@ -10,32 +10,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'TypeScript-friendly API',
+    Svg: require('@site/static/img/undraw_code_typing.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        It provides models in the DOT language.
+        TypeScript type definitions are also provided for attributes and even attribute types.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Freedom from programming paradigms',
+    Svg: require('@site/static/img/undraw_omega.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Designed to be object-oriented, it provides APIs that can be adapted to both imperative and declarative APIs.
+        You can choose the paradigm that best fits your project.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Modular and Extensible',
+    Svg: require('@site/static/img/undraw_bookshelves.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        The library is split into multiple packages, each serving a specific purpose.
+        This modular design allows users to pick and choose the functionality they need, resulting in improved maintainability and flexibility.
       </>
     ),
   },

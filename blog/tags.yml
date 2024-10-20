@@ -1,19 +1,11 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+security:
+  label: Security
+  permalink: /security
+  description: |
+    Open source security is a community effort. Learn what we're doing to keep secue to keep ts-graphviz libraries.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+release:
+  label: Release
+  permalink: /release
+  description: |
+    Stay up to date with the latest releases of ts-graphviz libraries.
