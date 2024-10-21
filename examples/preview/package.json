@@ -1,0 +1,18 @@
+{
+  "name": "preview",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@hpcc-js/wasm-graphviz": "^1.6.1",
+    "prismjs": "^1.29.0",
+    "ts-graphviz": "^2.1.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.3",
+    "vite": "^5.4.9"
+  }
+}

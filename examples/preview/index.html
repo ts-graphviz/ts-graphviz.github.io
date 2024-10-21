@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preview ts-graphviz diagram</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+    main {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+    }
+    pre {
+      flex: 1;
+      overflow: auto;
+      padding: 0;
+      margin: 0;
+    }
+    code {
+      display: block;
+      padding: 1em;
+      margin: 0;
+      white-space: pre-wrap;
+    }
+    #graph {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <pre><code id="code" class="language-dot" ></code></pre>
+    <div id="graph"></div>
+  </main>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
