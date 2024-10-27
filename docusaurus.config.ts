@@ -21,6 +21,14 @@ const config: Config = {
     locales: ['en', 'ja'],
   },
   presets: [
+    // [
+    //   '@docusaurus/preset-classic',
+    //   {
+    //     googleAnalytics: {
+    //       trackingID: 'G-3GJJ15ETKQ',
+    //     },
+    //   },
+    // ],
     [
       'classic',
       {
@@ -47,6 +55,10 @@ const config: Config = {
         },
         theme: {
           customCss: './src/css/custom.css',
+        },
+        gtag: {
+          trackingID: 'G-3GJJ15ETKQ',
+          anonymizeIP: true,
         },
       } satisfies Preset.Options,
     ],
