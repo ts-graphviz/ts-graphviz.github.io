@@ -61,8 +61,8 @@ jobs:
         run: pnpm run build
       - uses: actions/upload-artifact@84480863f228bb9747b473957fcc9e309aa96097 # v4.4.2
         with:
-          path: |
-            build
+          path: build
+          name: build
 
   release:
     name: Release
