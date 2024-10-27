@@ -1,6 +1,6 @@
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import PreviewTSGraphvizScript from '@site/src/components/PreviewTSGraphvizScript';
-import Layout from "@theme/Layout";
+import Layout from '@theme/Layout';
 
 const script = `import { digraph, attribute as _ } from 'ts-graphviz';
 
@@ -17,11 +17,12 @@ export default digraph('state_machine', { newrank: true }, (g) => {
 `;
 
 export default function Playground(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Playground of ts-graphviz diagram`}
-      description={siteConfig.tagline}>
+      description={siteConfig.tagline}
+    >
       <PreviewTSGraphvizScript
         title="Hello, World!"
         script={script}

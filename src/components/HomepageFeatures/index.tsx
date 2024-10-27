@@ -14,8 +14,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_code_typing.svg').default,
     description: (
       <>
-        It provides models in the DOT language.
-        TypeScript type definitions are also provided for attributes and even attribute types.
+        It provides models in the DOT language. TypeScript type definitions are
+        also provided for attributes and even attribute types.
       </>
     ),
   },
@@ -24,8 +24,9 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_omega.svg').default,
     description: (
       <>
-        Designed to be object-oriented, it provides APIs that can be adapted to both imperative and declarative APIs.
-        You can choose the paradigm that best fits your project.
+        Designed to be object-oriented, it provides APIs that can be adapted to
+        both imperative and declarative APIs. You can choose the paradigm that
+        best fits your project.
       </>
     ),
   },
@@ -34,14 +35,16 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_bookshelves.svg').default,
     description: (
       <>
-        The library is split into multiple packages, each serving a specific purpose.
-        This modular design allows users to pick and choose the functionality they need, resulting in improved maintainability and flexibility.
+        The library is split into multiple packages, each serving a specific
+        purpose. This modular design allows users to pick and choose the
+        functionality they need, resulting in improved maintainability and
+        flexibility.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
@@ -60,8 +63,8 @@ export default function HomepageFeatures(): JSX.Element {
     <section className={styles.features}>
       <div className="container">
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {FeatureList.map((props) => (
+            <Feature key={props.title} {...props} />
           ))}
         </div>
       </div>

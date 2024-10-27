@@ -1,5 +1,5 @@
 import StackBlitz from '@site/src/components/StackBlitz';
-import { EmbedOptions, ProjectFiles } from "@stackblitz/sdk";
+import type { EmbedOptions, ProjectFiles } from '@stackblitz/sdk';
 
 const files: ProjectFiles = {
   'index.html': `<!DOCTYPE html>
@@ -99,8 +99,12 @@ interface PreviewProps {
   options?: EmbedOptions;
 }
 
-
-export default function PreviewTSGraphvizScript({title, description, script, options}: PreviewProps): JSX.Element {
+export default function PreviewTSGraphvizScript({
+  title,
+  description,
+  script,
+  options,
+}: PreviewProps): JSX.Element {
   return (
     <StackBlitz
       template="node"

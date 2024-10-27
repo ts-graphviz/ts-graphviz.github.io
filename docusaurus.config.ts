@@ -3,7 +3,6 @@ import npm2yarn from '@docusaurus/remark-plugin-npm2yarn';
 import type { Config } from '@docusaurus/types';
 import { themes as prismThemes } from 'prism-react-renderer';
 
-
 const config: Config = {
   title: 'ts-graphviz',
   tagline: 'Graphviz libraries for TypeScript',
@@ -54,7 +53,8 @@ const config: Config = {
   ],
 
   themeConfig: {
-    image: 'https://socialify.git.ci/ts-graphviz/ts-graphviz/image?description=1&font=Jost&forks=1&logo=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F63964583%3Fv%3D4&name=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Auto',
+    image:
+      'https://socialify.git.ci/ts-graphviz/ts-graphviz/image?description=1&font=Jost&forks=1&logo=https%3A%2F%2Favatars.githubusercontent.com%2Fu%2F63964583%3Fv%3D4&name=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Auto',
     navbar: {
       title: 'ts-graphviz',
       logo: {
@@ -68,13 +68,13 @@ const config: Config = {
           position: 'left',
           label: 'Guides',
         },
-        {to: '/playground', label: 'Playground', position: 'left'},
+        { to: '/playground', label: 'Playground', position: 'left' },
         {
           href: 'https://ts-graphviz.github.io/ts-graphviz/',
           label: 'API Reference',
           position: 'left',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        { to: '/blog', label: 'Blog', position: 'left' },
         {
           type: 'localeDropdown',
           position: 'right',

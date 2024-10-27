@@ -1,11 +1,11 @@
-import { Graphviz } from "@hpcc-js/wasm-graphviz";
+import { Graphviz } from '@hpcc-js/wasm-graphviz';
 import { highlightElement } from 'prismjs';
-import "prismjs/components/prism-dot";
+import 'prismjs/components/prism-dot';
 import 'prismjs/themes/prism-okaidia.css';
 import { RootGraph, toDot } from 'ts-graphviz';
 
-const graphElement = document.getElementById("graph")!;
-const codeElement = document.getElementById("code")!;
+const graphElement = document.getElementById('graph')!;
+const codeElement = document.getElementById('code')!;
 
 import('./diagram.js').then(async (module) => {
   const graphviz = await Graphviz.load();
@@ -26,5 +26,4 @@ import('./diagram.js').then(async (module) => {
       break;
     }
   }
-
 });
