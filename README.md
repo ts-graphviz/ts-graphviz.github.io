@@ -24,10 +24,9 @@ $ pnpm build
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-### Format
-
-Using SSH:
+### Lint and Format
 
 ```
+$ pnpm lint
 $ pnpm format
 ```
