@@ -29,6 +29,13 @@ function HomepageHeader() {
               ts-graphviz Tutorial - 5min ⏱️
             </Translate>
           </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/playground">
+          <Translate id="index.tutorial">
+              Playground 🎡
+            </Translate>
+          </Link>
         </div>
       </div>
     </header>

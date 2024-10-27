@@ -68,6 +68,7 @@ const config: Config = {
           position: 'left',
           label: 'Guides',
         },
+        {to: '/playground', label: 'Playground', position: 'left'},
         {
           href: 'https://ts-graphviz.github.io/ts-graphviz/',
           label: 'API Reference',
