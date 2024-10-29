@@ -5,7 +5,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 const config: Config = {
   title: 'ts-graphviz',
-  tagline: 'Graphviz libraries for TypeScript',
+  tagline: 'Bringing the power of Graphviz to the TypeScript/JavaScript ecosystem.',
   favicon: 'img/favicon.ico',
 
   url: 'https://ts-graphviz.github.io',
@@ -21,21 +21,13 @@ const config: Config = {
     locales: ['en', 'ja'],
   },
   presets: [
-    // [
-    //   '@docusaurus/preset-classic',
-    //   {
-    //     googleAnalytics: {
-    //       trackingID: 'G-3GJJ15ETKQ',
-    //     },
-    //   },
-    // ],
     [
       'classic',
       {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl:
-            'https://github.com/ts-graphviz/ts-graphviz/tree/main/website/',
+            'https://pr.new/github.com//ts-graphviz/ts-graphviz.github.io/edit/main/',
           remarkPlugins: [
             [npm2yarn, { sync: true, converters: ['yarn', 'pnpm'] }],
           ],
@@ -43,7 +35,7 @@ const config: Config = {
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/ts-graphviz/ts-graphviz/tree/main/website/',
+            'https://pr.new/github.com//ts-graphviz/ts-graphviz.github.io/edit/main/',
           remarkPlugins: [
             [npm2yarn, { sync: true, converters: ['yarn', 'pnpm'] }],
           ],
