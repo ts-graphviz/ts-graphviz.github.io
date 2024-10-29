@@ -1,11 +1,11 @@
 .tools {
   padding: 60px 16px;
-  background: #F5F6F7;
+  background: #f5f6f7;
   text-align: center;
 }
 
-[data-theme=dark] .tools {
-  background: #1C1E21;
+[data-theme="dark"] .tools {
+  background: #1c1e21;
 }
 
 .tools h2 {

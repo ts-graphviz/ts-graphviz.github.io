@@ -11,7 +11,8 @@ const features = [
   },
   {
     title: 'Various Tools and Libraries',
-    description: 'Support your development with OSS libraries and GitHub Actions.',
+    description:
+      'Support your development with OSS libraries and GitHub Actions.',
     Svg: require('@site/static/img/undraw_bookshelves.svg').default,
   },
   {
@@ -26,7 +27,7 @@ const features = [
   },
   {
     title: 'Customizable and Extensible',
-    description: 'Extend the library\'s type system to meet specific needs.',
+    description: "Extend the library's type system to meet specific needs.",
     Svg: require('@site/static/img/undraw_bibliophile.svg').default,
   },
 ];
@@ -35,7 +36,7 @@ const Features: React.FC = () => (
   <section id="features" className={styles.features}>
     <h2>Why Choose ts-graphviz?</h2>
     <div className={styles.featureList}>
-      {features.map(({ title, Svg, description}) => (
+      {features.map(({ title, Svg, description }) => (
         <div key={title} className={styles.featureItem}>
           <div className="text--center">
             <Svg className={styles.featureSvg} role="img" />

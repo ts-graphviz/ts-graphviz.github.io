@@ -11,9 +11,7 @@ const HeroSection: React.FC = () => {
     <section className={styles.hero}>
       <img src="/img/logo.png" alt="ts-graphviz" />
       <Heading as="h1">
-        <Translate id="HeroSection.title">
-          {siteConfig.tagline}
-        </Translate>
+        <Translate id="HeroSection.title">{siteConfig.tagline}</Translate>
       </Heading>
       <p>
         <Translate id="HeroSection.title">

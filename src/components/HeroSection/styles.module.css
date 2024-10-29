@@ -4,7 +4,7 @@
   background: var(--ifm-color-primary-lighter);
 }
 
-[data-theme=dark] .hero {
+[data-theme="dark"] .hero {
   background: var(--ifm-color-primary-darker);
 }
 

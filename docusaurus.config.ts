@@ -5,7 +5,8 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 const config: Config = {
   title: 'ts-graphviz',
-  tagline: 'Bringing the power of Graphviz to the TypeScript/JavaScript ecosystem.',
+  tagline:
+    'Bringing the power of Graphviz to the TypeScript/JavaScript ecosystem.',
   favicon: 'img/favicon.ico',
 
   url: 'https://ts-graphviz.github.io',
