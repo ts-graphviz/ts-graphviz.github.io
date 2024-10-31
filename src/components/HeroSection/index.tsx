@@ -19,9 +19,9 @@ const HeroSection: React.FC = () => {
         </Translate>
       </p>
       <div className={styles.buttons}>
-        <Link className="button button--secondary button--lg" to="/docs/intro">
+        <Link className="button button--secondary button--lg" to="/docs/ts-graphviz/getting-started/Installation">
           <Translate id="index.tutorial">
-            ts-graphviz Tutorial - 5min ⏱️
+           Get Started 🚀
           </Translate>
         </Link>
         <Link className="button button--secondary button--lg" to="/playground">
