@@ -31,7 +31,7 @@ The Scorecard is a CLI tool that automatically checks and evaluates security ris
 Implementing these security measures significantly enhanced the security of ts-graphviz. We believe this can inspire other OSS projects to adopt similar measures, improving overall security in the open-source community.
 
 ## 🌟 Get Involved and Support
-We invite you to support our efforts through OpenCollective and GitHub Sponsors. Your contributions help us maintain and improve the security of ts-graphviz. 
+We invite you to support our efforts through OpenCollective and GitHub Sponsors. Your contributions help us maintain and improve the security of ts-graphviz.
 
 Check out the English versions of the slides and speaker notes from our LT:
 
@@ -49,7 +49,7 @@ Today, I’d like to talk about "Secure Library Development" with a focus on the
 
 ![](./slides/1.png)
 
-Hello, I’m Yuki Yamazaki, also known as kamiazya on GitHub and Twitter.
+Hello, I’m Yuki Yamazaki, also known as kamiazya on GitHub and X(Twitter).
 I work at iRidge, Inc., where I develop, maintain, and operate a mobile application development support kit (SaaS + SDK).
 
 ![](./slides/2.png)
@@ -95,7 +95,7 @@ The content is useful not only for OSS developers but also for users.
 ![](./slides/8.png)
 
 The second is the OpenSSF Best Practices Badge. OSS developers can self-certify their projects by answering security-related questions.
-By working to meet the criteria, you can make your packages more secure. 
+By working to meet the criteria, you can make your packages more secure.
 
 The evaluation criteria are publicly available, so by striving to meet these criteria, you can enhance the security of your packages.
 
