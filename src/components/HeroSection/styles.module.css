@@ -2,7 +2,6 @@
   text-align: center;
   padding: 80px 16px;
   position: relative;
-  height: 700px;
 }
 
 .particles {
@@ -10,7 +9,10 @@
   background: var(--ifm-color-primary-lighter);
   top: 0;
   left: 0;
-  height: 700px;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
   z-index: -1;
 }
 
