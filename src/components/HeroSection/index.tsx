@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Heading from '@theme/Heading';
 import Particles, { initParticlesEngine } from '@tsparticles/react';
 import { loadSlim } from '@tsparticles/slim';
@@ -10,7 +10,6 @@ import { loadSlim } from '@tsparticles/slim';
 import styles from './styles.module.css';
 
 const HeroSection: React.FC = () => {
-  const { siteConfig } = useDocusaurusContext();
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -22,24 +21,26 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className={styles.hero}>
-      <img src="/img/logo.png" alt="ts-graphviz" />
+      <img src={useBaseUrl('/img/logo.png')} alt="ts-graphviz" />
       <Heading as="h1">
-        <Translate id="HeroSection.title">{siteConfig.tagline}</Translate>
+        <Translate id="HeroSection.copy">
+          Bringing the power of Graphviz to the TypeScript/JavaScript ecosystem.
+        </Translate>
       </Heading>
       <p>
-        <Translate id="HeroSection.title">
+        <Translate id="HeroSection.headline">
           Simplify graph visualization with a variety of tools.
         </Translate>
       </p>
       <div className={styles.buttons}>
         <Link
           className="button button--secondary button--lg"
-          to="/docs/ts-graphviz/getting-started/Installation"
+          to="/docs/ts-graphviz/introduction"
         >
-          <Translate id="index.tutorial">Get Started 🚀</Translate>
+          <Translate id="HeroSection.tutorial">Get Started 🚀</Translate>
         </Link>
         <Link className="button button--secondary button--lg" to="/playground">
-          <Translate id="index.tutorial">Playground 🎡</Translate>
+          <Translate id="HeroSection.playground">Playground 🎡</Translate>
         </Link>
       </div>
       {init ? (
@@ -80,7 +81,6 @@ const HeroSection: React.FC = () => {
               number: {
                 density: {
                   enable: true,
-                  area: 800,
                 },
                 value: 80,
               },

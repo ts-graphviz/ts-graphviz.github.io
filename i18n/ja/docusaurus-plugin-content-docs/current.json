@@ -1,0 +1,26 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.ts-graphviz Library": {
+    "message": "ts-graphviz Library",
+    "description": "The label for category ts-graphviz Library in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.ts-graphviz Library.link.generated-index.description": {
+    "message": "Simple Graphviz Library for TypeScript",
+    "description": "The generated-index page description for category ts-graphviz Library in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Getting Started.link.generated-index.description": {
+    "message": "5 minutes to learn the most important ts-graphviz concepts.",
+    "description": "The generated-index page description for category Getting Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Practical Tutorials": {
+    "message": "Practical Tutorials",
+    "description": "The label for category Practical Tutorials in sidebar tutorialSidebar"
+  }
+}
