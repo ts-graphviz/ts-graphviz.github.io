@@ -1,10 +1,20 @@
 .hero {
   text-align: center;
   padding: 80px 16px;
-  background: var(--ifm-color-primary-lighter);
+  position: relative;
+  height: 700px;
 }
 
-[data-theme="dark"] .hero {
+.particles {
+  position: absolute;
+  background: var(--ifm-color-primary-lighter);
+  top: 0;
+  left: 0;
+  height: 700px;
+  z-index: -1;
+}
+
+[data-theme="dark"] .particles {
   background: var(--ifm-color-primary-darker);
 }
 
@@ -23,19 +33,3 @@
   justify-content: center;
   gap: 20px;
 }
-
-/*
-
-.button {
-  display: inline-block;
-  margin: 0 8px;
-  padding: 12px 24px;
-  background: var(--ifm-color-primary);
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-.button:hover {
-  background: var(--ifm-color-primary-darkest);
-} */
