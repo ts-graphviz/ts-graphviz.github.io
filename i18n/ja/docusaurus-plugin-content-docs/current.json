@@ -12,15 +12,19 @@
     "description": "The generated-index page description for category ts-graphviz Library in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Getting Started": {
-    "message": "Getting Started",
+    "message": "クイックスタート",
     "description": "The label for category Getting Started in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Getting Started.link.generated-index.description": {
-    "message": "5 minutes to learn the most important ts-graphviz concepts.",
+    "message": "ts-graphviz の最も重要なコンセプトを5分で学びましょう。",
     "description": "The generated-index page description for category Getting Started in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Practical Tutorials": {
-    "message": "Practical Tutorials",
+    "message": "実践的なチュートリアル",
     "description": "The label for category Practical Tutorials in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Practical Tutorials.link.generated-index.description": {
+    "message": "ts-graphviz を実際のシナリオで適用するためのステップバイステップのチュートリアル。",
+    "description": "The generated-index page description for category Practical Tutorials in sidebar tutorialSidebar"
   }
 }

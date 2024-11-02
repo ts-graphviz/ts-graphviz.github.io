@@ -1,8 +1,6 @@
 ---
 sidebar_position: 4
 ---
-import PreviewTSGraphvizScript from '@site/src/components/PreviewTSGraphvizScript';
-
 # Glossary
 
 A compilation of terms related to graph theory and ts-graphviz.
