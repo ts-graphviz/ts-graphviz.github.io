@@ -26,5 +26,21 @@
   "sidebar.tutorialSidebar.category.Practical Tutorials.link.generated-index.description": {
     "message": "ts-graphviz を実際のシナリオで適用するためのステップバイステップのチュートリアル。",
     "description": "The generated-index page description for category Practical Tutorials in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Intermediate Topics": {
+    "message": "中級トピック",
+    "description": "The label for category Intermediate Topics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Intermediate Topics.link.generated-index.description": {
+    "message": "ts-graphviz の内部動作を理解するための中級トピック。",
+    "description": "The generated-index page description for category Intermediate Topics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Advanced Usage": {
+    "message": "高度な使い方",
+    "description": "The label for category Advanced Usage in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Advanced Usage.link.generated-index.description": {
+    "message": "ts-graphviz の内部動作を理解するための高度なトピック。",
+    "description": "The generated-index page description for category Advanced Usage in sidebar tutorialSidebar"
   }
 }
