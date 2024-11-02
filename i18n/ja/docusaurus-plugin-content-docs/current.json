@@ -4,11 +4,11 @@
     "description": "The label for version current"
   },
   "sidebar.tutorialSidebar.category.ts-graphviz Library": {
-    "message": "ts-graphviz Library",
+    "message": "ts-graphviz ライブラリ",
     "description": "The label for category ts-graphviz Library in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.ts-graphviz Library.link.generated-index.description": {
-    "message": "Simple Graphviz Library for TypeScript",
+    "message": "ts-graphviz ライブラリの概要と使い方。",
     "description": "The generated-index page description for category ts-graphviz Library in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Getting Started": {
