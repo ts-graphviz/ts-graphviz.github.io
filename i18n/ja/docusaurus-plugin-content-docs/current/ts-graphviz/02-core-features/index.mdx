@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 ---
-import PreviewTSGraphvizScript from '@site/src/components/PreviewTSGraphvizScript';
+import TSGraphvizLiveEditor from '@site/src/components/TSGraphvizLiveEditor';
 
 # コア機能
 
@@ -11,28 +11,20 @@ import PreviewTSGraphvizScript from '@site/src/components/PreviewTSGraphvizScrip
 
 **プレイグラウンド:**
 
- <PreviewTSGraphvizScript
-  title="Type hint preview of ts-graphviz"
+<TSGraphvizLiveEditor
   script={`
 import { digraph, attribute as _ } from 'ts-graphviz';
 
-export default digraph('G', (g) => {
+const G = digraph('G', (g) => {
     g.node('A', { [_.color]: 'red' });
     g.edge(['A', 'B'], { [_.label]: 'A to B' });
-});
-`}
-  options={{
-    view: 'default',
-    width: '100%',
-    height: 300,
-    clickToLoad: true,
-  }}
+});`}
+  height={150}
+  readOnly
 />
 
 :::tip
-エディタを起動するには、**RUN PROJECT** ボタンを押してください。
-
-エディタが起動し、npm のインストールが完了したら、`digraph` や `g.node`、`[_.color]` にカーソルを合わせると型のヒントが表示されます。
+`digraph` や `g.node`、`[_.color]` にカーソルを合わせると型のヒントが表示されます。
 :::
 
 **解説:**

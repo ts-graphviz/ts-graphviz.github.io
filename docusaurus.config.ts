@@ -138,6 +138,25 @@ const config: Config = {
       additionalLanguages: ['dot'],
     },
   } satisfies Preset.ThemeConfig,
+  plugins: [
+    async () => ({
+      name: 'docusaurus-plugin-esmodule-shims',
+      configureWebpack() {
+        return {
+          module: {
+            rules: [
+              {
+                test: /\.m?js$/,
+                resolve: {
+                  fullySpecified: false,
+                },
+              },
+            ],
+          },
+        };
+      },
+    }),
+  ],
 };
 
 export default config;

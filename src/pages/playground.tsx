@@ -4,7 +4,7 @@ import Layout from '@theme/Layout';
 
 const script = `import { digraph, attribute as _ } from 'ts-graphviz';
 
-export default digraph('state_machine', { newrank: true }, (g) => {
+export default digraph('state_machine', { [_.newrank]: true }, (g) => {
   g.node({ shape: 'circle' });
 
   g.edge(['Model', 'DOT'], { [_.label]: 'toDot', [_.constraint]: false });
