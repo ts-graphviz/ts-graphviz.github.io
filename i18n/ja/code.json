@@ -389,5 +389,17 @@
   },
   "HeroSection.api": {
     "message": "API リファレンス 📖"
+  },
+  "index.title": {
+    "message": "TypeScriptとJavaScriptでグラフ可視化を簡単に"
+  },
+  "index.description": {
+    "message": "ts-graphvizでTypeScriptとJavaScriptプロジェクトにGraphvizの力を活用。多彩なツールでグラフの可視化を簡素化します。"
+  },
+  "playground.title": {
+    "message": "インタラクティブ プレイグラウンド - ブラウザでグラフを可視化"
+  },
+  "playground.description": {
+    "message": "ts-graphviz のプレイグラウンドで、Graphviz グラフをインタラクティブにオンラインで記述・可視化しましょう。TypeScript/JavaScript を使ってブラウザ上でグラフを構築、編集、レンダリングできます。インストールは不要です。"
   }
 }
