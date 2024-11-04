@@ -21,12 +21,12 @@ const HeroSection: React.FC = () => {
 
   return (
     <section className={styles.hero}>
-      <img src={useBaseUrl('/img/logo.png')} alt="ts-graphviz" />
       <Heading as="h1">
         <Translate id="HeroSection.copy">
           Bringing the power of Graphviz to the TypeScript/JavaScript ecosystem.
         </Translate>
       </Heading>
+      <img src={useBaseUrl('/img/logo.png')} alt="ts-graphviz" />
       <p>
         <Translate id="HeroSection.headline">
           Simplify graph visualization with a variety of tools.
