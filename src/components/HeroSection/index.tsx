@@ -42,6 +42,9 @@ const HeroSection: React.FC = () => {
         <Link className="button button--secondary button--lg" to="/playground">
           <Translate id="HeroSection.playground">Playground 🎡</Translate>
         </Link>
+        <a className="button button--secondary button--lg" href="https://ts-graphviz.github.io/ts-graphviz/">
+          <Translate id="HeroSection.api">API Refarence 📖</Translate>
+        </a>
       </div>
       {init ? (
         <Particles

@@ -386,5 +386,8 @@
   "Simplify graph visualization with a variety of tools": {
     "message": "多彩なツールでグラフ可視化を簡単に",
     "description": "The title of the landing page"
+  },
+  "HeroSection.api": {
+    "message": "API リファレンス 📖"
   }
 }
