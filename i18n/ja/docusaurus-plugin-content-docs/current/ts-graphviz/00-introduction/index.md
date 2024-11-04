@@ -1,5 +1,5 @@
 ---
-sidebar_position: 0
+description: TypeScriptでGraphvizの図を作成・操作するts-graphvizの紹介
 ---
 # はじめに
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 12
+description: ts-graphvizのアーキテクチャと設計原則を探求
 ---
 # アーキテクチャと設計原則
 

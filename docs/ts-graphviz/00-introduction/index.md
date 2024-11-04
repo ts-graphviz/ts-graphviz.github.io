@@ -1,5 +1,5 @@
 ---
-sidebar_position: 0
+description: Learn about ts-graphviz, a TypeScript library for Graphviz.
 ---
 # Introduction
 

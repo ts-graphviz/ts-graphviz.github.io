@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+description: グラフを構築・操作するためのts-graphvizの基本を理解する
 ---
 # 基本的な概念と使い方
 

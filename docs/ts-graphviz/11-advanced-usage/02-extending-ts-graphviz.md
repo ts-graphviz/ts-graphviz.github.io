@@ -1,3 +1,6 @@
+---
+description: How to extend ts-graphviz with custom classes.
+---
 # Extending ts-graphviz
 
 `ts-graphviz` is designed to be extensible, allowing advanced users to customize and enhance the library's functionality to meet specific needs. This section covers how to extend the type system and create custom implementations.

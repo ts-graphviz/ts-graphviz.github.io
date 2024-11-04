@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+description: ts-graphvizでグラフをSVGやPNGの画像にレンダリング
 ---
 # グラフの画像レンダリング
 

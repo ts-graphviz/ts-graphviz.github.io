@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+description: Render graphs to images like SVG or PNG using ts-graphviz.
 ---
 # Rendering Graphs to Images
 

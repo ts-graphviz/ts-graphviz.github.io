@@ -1,8 +1,11 @@
 ---
-title: Community Collaboration Drives ts-graphviz/setup-graphviz Evolution 🌟
 authors: kamiazya
 tags: [release]
+description: |-
+  Highlights the crucial role of community collaboration in the evolution of ts-graphviz/setup-graphviz. Discusses recent contributions, updates, and ways for readers to participate in shaping the project's future through active involvement.
 ---
+# Community Collaboration Drives ts-graphviz/setup-graphviz Evolution 🌟
+
 Hello, ts-graphviz community!
 We're excited to announce the latest releases of setup-graphviz, versions v2.0.1 and v2.0.2.
 

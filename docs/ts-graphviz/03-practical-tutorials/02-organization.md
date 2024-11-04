@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+description: Learn to build organizational charts using ts-graphviz.
 ---
 # Creating an Organizational Chart
 

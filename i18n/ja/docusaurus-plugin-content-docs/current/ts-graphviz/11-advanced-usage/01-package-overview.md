@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+description: ts-graphvizのパッケージ構成と各モジュールの詳細を解説
 ---
 # パッケージ概要
 

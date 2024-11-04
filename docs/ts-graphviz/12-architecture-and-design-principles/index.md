@@ -1,5 +1,5 @@
 ---
-sidebar_position: 12
+description: Explore ts-graphviz's architecture and design principles.
 ---
 # Architecture and Design Principles
 

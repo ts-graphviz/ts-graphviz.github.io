@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+description: In-depth look at ts-graphviz's package architecture and modules.
 ---
 # Package Overview
 

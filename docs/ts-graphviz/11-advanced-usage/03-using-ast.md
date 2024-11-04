@@ -1,3 +1,6 @@
+---
+description: Manipulate DOT graphs at the AST level with @ts-graphviz/ast.
+---
 # Using Abstract Syntax Tree (AST)
 
 For advanced use cases, `@ts-graphviz/ast` provides an API to handle Abstract Syntax Trees (ASTs) of DOT language graphs.

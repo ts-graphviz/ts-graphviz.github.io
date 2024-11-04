@@ -1,6 +1,5 @@
 {
   "label": "Intermediate Topics",
-  "position": 4,
   "link": {
     "type": "generated-index",
     "description": "Advanced topics to help you understand the inner workings of ts-graphviz."

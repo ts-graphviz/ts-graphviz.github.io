@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+description: Understand ts-graphviz basics to build and manipulate graphs.
 ---
 
 # Basic Concepts and Usage

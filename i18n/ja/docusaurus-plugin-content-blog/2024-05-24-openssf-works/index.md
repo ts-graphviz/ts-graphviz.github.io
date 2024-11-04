@@ -1,8 +1,10 @@
 ---
-title: OpenSSF の取り組みを活用して ts-graphviz を保護し、セキュリティを強化しました🛡️
 authors: kamiazya
 tags: [security]
+description: |-
+  ts-graphviz がオープンソースセキュリティ財団（OpenSSF）の取り組みを活用してセキュリティを強化する方法を解説します。ユーザーにとって安全な開発環境を確保するために、ts-graphviz エコシステムで実施された保護とセキュリティ対策を紹介します。
 ---
+# OpenSSF の取り組みを活用して ts-graphviz を保護し、セキュリティを強化しました🛡️
 
 ## 📅 はじめに
 

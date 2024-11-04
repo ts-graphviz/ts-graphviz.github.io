@@ -1,4 +1,6 @@
-
+---
+description: '@ts-graphviz/astでASTレベルのDOTグラフを操作'
+---
 # 抽象構文木（AST）の使用
 
 高度なユースケースでは、`@ts-graphviz/ast` を使用して DOT 言語グラフの抽象構文木（AST）を操作するための API を提供しています。

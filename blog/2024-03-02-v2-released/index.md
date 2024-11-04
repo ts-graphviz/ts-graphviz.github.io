@@ -1,9 +1,12 @@
 ---
 slug: v2
-title: 'ts-graphviz v2.0.0 Released🎉'
 authors: kamiazya
 tags: [security, release]
+description: |-
+  Announces the release of ts-graphviz version 2.0.0, covering the exciting new features, performance improvements, and important changes in this major update. Provides information on upgrading projects to leverage the latest advancements in graph visualization.
 ---
+# ts-graphviz v2.0.0 Released🎉
+
 Hello, everyone! We are excited to share that ts-graphviz v2.0.0 is now available!
 This major update brings a host of improvements aimed at enhancing performance, security, and compatibility with the evolving JavaScript ecosystem.
 

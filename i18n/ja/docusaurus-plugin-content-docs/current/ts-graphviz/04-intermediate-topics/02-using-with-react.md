@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+description: ReactとJSXで宣言的なグラフを作る@ts-graphviz/reactの使用法
 ---
 # `@ts-graphviz/react` の使用
 

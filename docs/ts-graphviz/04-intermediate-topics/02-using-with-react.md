@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+description: Use @ts-graphviz/react for declarative graphs with React and JSX.
 ---
 # Using `@ts-graphviz/react`
 

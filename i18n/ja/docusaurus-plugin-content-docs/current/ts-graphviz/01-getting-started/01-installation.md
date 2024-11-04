@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+description: ts-graphvizをインストールしてすぐにグラフ作成を始めましょう
 ---
 # インストール
 

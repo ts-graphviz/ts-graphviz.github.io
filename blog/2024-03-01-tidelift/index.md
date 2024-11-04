@@ -1,9 +1,11 @@
 ---
-slug: Tidelift
-title: Tidelift Subscription 🌱
 authors: kamiazya
 tags: [security]
+description: |-
+  Explains how the ts-graphviz partnership with Tidelift offers professional support and maintenance through a subscription model. The article details the benefits to users, including reliable updates, security assurances, and long-term sustainability for projects.
 ---
+# Tidelift Subscription 🌱
+
 Hey everyone 👋,
 
 At the heart of the ts-graphviz project, we're all about pushing the envelope on technical excellence and bolstering our community.
