@@ -25,7 +25,8 @@ export default function Playground(): JSX.Element {
       })}
       description={translate({
         id: 'playground.description',
-        message: 'Explore the ts-graphviz Playground to write and visualize Graphviz graphs interactively online. Build, edit, and render graphs using TypeScript/JavaScript directly in your browser—no installation needed.'
+        message:
+          'Explore the ts-graphviz Playground to write and visualize Graphviz graphs interactively online. Build, edit, and render graphs using TypeScript/JavaScript directly in your browser—no installation needed.',
       })}
     >
       <PreviewTSGraphvizScript

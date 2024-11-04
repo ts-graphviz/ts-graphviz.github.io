@@ -14,7 +14,8 @@ export default function LandingPage(): JSX.Element {
       })}
       description={translate({
         id: 'index.description',
-        message: 'Leverage the power of Graphviz in your TypeScript and JavaScript projects with ts-graphviz. Simplify graph visualization using a variety of tools.',
+        message:
+          'Leverage the power of Graphviz in your TypeScript and JavaScript projects with ts-graphviz. Simplify graph visualization using a variety of tools.',
       })}
     >
       <HeroSection />
