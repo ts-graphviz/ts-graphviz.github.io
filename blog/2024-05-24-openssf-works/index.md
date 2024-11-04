@@ -1,5 +1,4 @@
 ---
-title: Leveraging OpenSSF to Protect and Secure ts-graphviz Published🛡️
 authors: kamiazya
 tags: [security]
 description: |-
