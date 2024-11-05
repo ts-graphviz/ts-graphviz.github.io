@@ -3,13 +3,25 @@ description: TypeScriptでGraphvizの図を作成・操作するts-graphvizの�
 ---
 # はじめに
 
+## Graphviz とは？
+
+[Graphviz](https://graphviz.org/) は、抽象的なグラフやネットワークの図として構造情報を表現することができる、オープンソースのグラフ可視化ソフトウェアです。
+ノード、エッジ、およびそれらの関係を記述するために DOT 言語を使用し、それを PNG、SVG、PDF などのさまざまなグラフィック形式にレンダリングできます。Graphviz は、階層構造、データフロー、状態遷移図など、複雑な構造を可視化するために、学術や産業界で広く使用されています。
+
+<div align="center">
+
+![Graphviz logo](https://graphviz.org/Resources/app.png)
+
+<i>Graphviz logo</i>
+</div>
+
 ## ts-graphviz とは？
 
 **ts-graphviz** は TypeScript 用の Graphviz ライブラリであり、TypeScript/JavaScript エコシステム内で [Graphviz](https://graphviz.gitlab.io/) の強力な機能を直接利用できます。Graphviz の DOT 言語を TypeScript と完全に統合し、プログラムによるグラフの生成と操作を可能にします。これにより、動的なデータに基づいた複雑なグラフやネットワーク構造を簡単に可視化できます。
 
 <div align="center">
 
-![logo](/img/logo.png)
+![ts-graphviz logo](/img/logo.png)
 
 <i>ts-graphviz のロゴ</i>
 </div>
