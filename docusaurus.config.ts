@@ -137,6 +137,11 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
       additionalLanguages: ['dot'],
     },
+    algolia: {
+      appId: 'NJUCHJD7F4',
+      apiKey: '55c26969f6d0f1097060b505528086cc',
+      indexName: 'ts-graphvizio',
+    },
   } satisfies Preset.ThemeConfig,
 };
 
