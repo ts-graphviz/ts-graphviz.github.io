@@ -27,7 +27,7 @@ For users interested in extending or customizing `ts-graphviz`, understanding th
 
 ## `@ts-graphviz/common`
 
-**Purpose**: Centralizes Graphviz domain knowledge, providing type definitions, constants, and utilities. It is designed to handle use cases such as extending custom types.
+**Purpose**: Centralizes Graphviz domain knowledge, providing type definitions, constants, and utilities. It is designed to handle use cases such as extending types.
 
 **Usage**:
 

@@ -42,5 +42,13 @@
   "sidebar.tutorialSidebar.category.Advanced Usage.link.generated-index.description": {
     "message": "ts-graphviz の内部動作を理解するための高度なトピック。",
     "description": "The generated-index page description for category Advanced Usage in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Migration Guides": {
+    "message": "マイグレーションガイド",
+    "description": "The label for category Migration Guides in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Migration Guides.link.generated-index.description": {
+    "message": "このマイグレーション・ガイドは、ts-graphvizのバージョンをマイグレーションする際に役立ちます。 変更点の概要、その理由、コードを更新するためのステップ・バイ・ステップの手順が記載されています。",
+    "description": "The generated-index page description for category Migration Guides in sidebar tutorialSidebar"
   }
 }

@@ -14,7 +14,11 @@ description: '@ts-graphviz/astでASTレベルのDOTグラフを操作'
 - `stringify`: **AST** を **DOT** 文字列に変換します。
 - `parse`: **DOT** 文字列を **AST** に変換します。
 
-**注意:** `ts-graphviz` パッケージで提供されている `toDot` 関数は、`fromModel` と `stringify` の合成です。`fromDot` 関数は、`parse` と `toModel` の合成です。
+![State Machine](./img/state-machine.svg)
+
+:::note
+`ts-graphviz` パッケージで提供されている `toDot` 関数は、`fromModel` と `stringify` の合成です。`fromDot` 関数は、`parse` と `toModel` の合成です。
+:::
 
 ## 例
 
