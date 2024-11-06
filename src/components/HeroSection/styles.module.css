@@ -2,11 +2,15 @@
   text-align: center;
   padding: 80px 16px;
   position: relative;
+  background: var(--ifm-color-primary-lighter);
+  z-index: -2;
 }
 
+[data-theme="dark"] .hero {
+  background: var(--ifm-color-primary-darker);
+}
 .particles {
   position: absolute;
-  background: var(--ifm-color-primary-lighter);
   top: 0;
   left: 0;
   bottom: 0;
@@ -14,10 +18,6 @@
   padding: 0;
   margin: 0;
   z-index: -1;
-}
-
-[data-theme="dark"] .particles {
-  background: var(--ifm-color-primary-darker);
 }
 
 .hero h1 {
