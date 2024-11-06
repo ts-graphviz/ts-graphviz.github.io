@@ -1,4 +1,4 @@
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { translate } from '@docusaurus/Translate';
 import PreviewTSGraphvizScript from '@site/src/components/PreviewTSGraphvizScript';
 import Layout from '@theme/Layout';
 
@@ -17,11 +17,17 @@ export default digraph('state_machine', { [_.newrank]: true }, (g) => {
 `;
 
 export default function Playground(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Playground of ts-graphviz diagram`}
-      description={siteConfig.tagline}
+      title={translate({
+        id: 'playground.title',
+        message: 'Interactive Playground - Visualize Graphs in Your Browser',
+      })}
+      description={translate({
+        id: 'playground.description',
+        message:
+          'Explore the ts-graphviz Playground to write and visualize Graphviz graphs interactively online. Build, edit, and render graphs using TypeScript/JavaScript directly in your browser—no installation needed.',
+      })}
     >
       <PreviewTSGraphvizScript
         title="Hello, World!"

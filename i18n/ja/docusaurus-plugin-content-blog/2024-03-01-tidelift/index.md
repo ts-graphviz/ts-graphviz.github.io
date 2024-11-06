@@ -1,9 +1,12 @@
 ---
 slug: tidelift
-title: Tidelift サブスクリプション 🌱
 authors: kamiazya
 tags: [security]
+description: |-
+  ts-graphviz と Tidelift のパートナーシップにより、サブスクリプションモデルを通じてプロフェッショナルなサポートとメンテナンスが提供される仕組みを解説します。信頼性の高い更新、セキュリティ保証、プロジェクトの長期的な持続可能性など、ユーザーにもたらす利点を詳しく紹介します。
 ---
+# Tidelift サブスクリプション 🌱
+
 
 皆さん、こんにちは 👋
 

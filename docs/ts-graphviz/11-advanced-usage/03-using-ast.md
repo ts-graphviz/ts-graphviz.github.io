@@ -1,3 +1,6 @@
+---
+description: Manipulate DOT graphs at the AST level with @ts-graphviz/ast.
+---
 # Using Abstract Syntax Tree (AST)
 
 For advanced use cases, `@ts-graphviz/ast` provides an API to handle Abstract Syntax Trees (ASTs) of DOT language graphs.
@@ -12,7 +15,11 @@ The following functions are provided:
 - `stringify`: Converts an **AST** to a **DOT** string.
 - `parse`: Converts a **DOT** string to an **AST**.
 
-**Note:** The `toDot` function provided by the `ts-graphviz` package is a composition of `fromModel` and `stringify`. The `fromDot` function is a composition of `parse` and `toModel`.
+![State Machine](./img/state-machine.svg)
+
+:::note
+The `toDot` function provided by the `ts-graphviz` package is a composition of `fromModel` and `stringify`. The `fromDot` function is a composition of `parse` and `toModel`.
+:::
 
 ## Example
 

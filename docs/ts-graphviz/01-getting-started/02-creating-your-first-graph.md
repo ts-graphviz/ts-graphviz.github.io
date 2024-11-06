@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+description: Create your first graph with ts-graphviz using simple examples.
 ---
 # Creating Your First Graph
 

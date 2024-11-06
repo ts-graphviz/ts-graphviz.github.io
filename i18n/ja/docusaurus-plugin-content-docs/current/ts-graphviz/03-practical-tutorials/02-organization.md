@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+description: ts-graphvizを使って組織図を作成する方法を学びましょう
 ---
 # 組織図の作成
 

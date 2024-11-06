@@ -1,9 +1,11 @@
 ---
 slug: v2
-title: ts-graphviz v2.0.0 リリース 🎉
 authors: kamiazya
 tags: [security, release]
+description: |-
+  ts-graphviz バージョン 2.0.0 のリリースを発表し、この大規模アップデートで追加された新機能、パフォーマンス向上、重要な変更点を解説します。最新のグラフ可視化の進歩を活用するためのプロジェクトのアップグレード方法についても説明しています。
 ---
+# ts-graphviz v2.0.0 リリース 🎉
 皆さん、こんにちは！
 
 ts-graphviz v2.0.0 がリリースされたことをお知らせできることを嬉しく思います！

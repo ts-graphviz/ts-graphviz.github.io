@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+description: プロジェクトでts-graphvizを効果的に使うためのベストプラクティス
 ---
 # ベストプラクティス
 

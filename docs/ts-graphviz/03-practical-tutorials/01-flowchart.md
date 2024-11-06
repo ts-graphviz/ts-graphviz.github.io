@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+description: Step-by-step guide to creating flowcharts with ts-graphviz.
 ---
 # Creating a Flowchart
 

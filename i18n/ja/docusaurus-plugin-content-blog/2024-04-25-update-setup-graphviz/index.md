@@ -1,8 +1,10 @@
 ---
-title: ts-graphviz/setup-graphviz の進化を促すコミュニティの協力 🌟
 authors: kamiazya
 tags: [release]
+description: |-
+  コミュニティの協力が ts-graphviz/setup-graphviz の進化に果たした重要な役割を紹介します。最近の貢献やアップデート、そして積極的な参加を通じてプロジェクトの未来を形作る方法について解説しています。
 ---
+# ts-graphviz/setup-graphviz の進化を促すコミュニティの協力 🌟
 
 ts-graphviz コミュニティの皆さん、こんにちは！
 setup-graphviz の最新リリース、バージョン v2.0.1 と v2.0.2 をお知らせできることを嬉しく思います。

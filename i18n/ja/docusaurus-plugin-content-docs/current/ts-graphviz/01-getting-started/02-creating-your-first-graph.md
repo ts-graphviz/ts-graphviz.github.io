@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+description: 簡単な例でts-graphvizで最初のグラフを作成しましょう
 ---
 # 初めてのグラフを作成する
 

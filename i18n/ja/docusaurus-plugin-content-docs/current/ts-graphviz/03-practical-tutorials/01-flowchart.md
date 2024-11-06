@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+description: ts-graphvizでフローチャートを作成する手順を解説
 ---
 # フローチャートの作成
 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+description: Best practices for effectively using ts-graphviz in projects.
 ---
 # Best Practices
 

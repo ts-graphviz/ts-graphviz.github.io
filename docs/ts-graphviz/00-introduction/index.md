@@ -1,7 +1,20 @@
 ---
-sidebar_position: 0
+description: Learn about ts-graphviz, a TypeScript library for Graphviz.
 ---
 # Introduction
+
+
+## What is Graphviz?
+
+[Graphviz](https://graphviz.org/) is an open-source graph visualization software that allows you to represent structural information as diagrams of abstract graphs and networks.
+It uses a language called DOT to describe the nodes, edges, and their relationships, which can then be rendered into various graphical formats like PNG, SVG, PDF, etc. Graphviz is widely used in academia and industry for visualizing complex structures such as hierarchies, data flows, and state machines.
+
+<div align="center">
+
+![Graphviz logo](https://graphviz.org/Resources/app.png)
+
+<i>Graphviz logo</i>
+</div>
 
 ## What is ts-graphviz?
 
@@ -9,7 +22,7 @@ sidebar_position: 0
 
 <div align="center">
 
-![logo](/img/logo.png)
+![ts-graphviz logo](/img/logo.png)
 
 <i>ts-graphviz logo</i>
 </div>

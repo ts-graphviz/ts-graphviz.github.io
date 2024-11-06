@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+description: ts-graphvizとGraphvizの主要な用語を解説します
 ---
 # 用語集
 

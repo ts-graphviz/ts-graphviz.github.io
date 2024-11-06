@@ -1,8 +1,10 @@
 ---
-title: Leveraging OpenSSF to Protect and Secure ts-graphviz Published🛡️
 authors: kamiazya
 tags: [security]
+description: |-
+  An overview of how ts-graphviz enhances security by leveraging the Open Source Security Foundation (OpenSSF) initiatives. The article outlines measures implemented to protect and secure the ts-graphviz ecosystem, ensuring a safer development environment for users.
 ---
+# Leveraging OpenSSF to Protect and Secure ts-graphviz Published🛡️
 ## 📅 Introduction
 On May 24, 2024, at the Nextbeat Tech Bar’s ["First Discussion on Library Development"](https://nextbeat.connpass.com/event/312789/) in Japan, I presented an LT titled **"Secure Library Development"**.
 

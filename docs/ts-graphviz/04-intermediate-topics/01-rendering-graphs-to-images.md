@@ -1,11 +1,11 @@
 ---
-sidebar_position: 1
+description: Render graphs to images like SVG or PNG using ts-graphviz.
 ---
 # Rendering Graphs to Images
 
 While `ts-graphviz` module focuses on modeling graphs using the DOT language and generating DOT strings, you may want to render your graphs into image formats like SVG or PNG. This is where `ts-graphviz/adapter` module comes into play.
 
-`ts-graphviz/adapter` allows you to execute the Graphviz `dot` command in various runtime environments (Node.js, Deno) to convert DOT strings into image files. This enables you to visualize your graphs as images within your applications or export them for use elsewhere.
+`ts-graphviz/adapter` module allows you to execute the Graphviz `dot` command in various runtime environments (Node.js, Deno) to convert DOT strings into image files. This enables you to visualize your graphs as images within your applications or export them for use elsewhere.
 
 :::danger
 At this time, `ts-graphviz/adapter` does not support running in a browser. If you want to visualize DOT language in a browser or output it as an image, you need to use other npm libraries such as [d3-graphviz](https://www.npmjs.com/package/d3-graphviz) or [@hpcc-js/wasm-graphviz](https://www.npmjs.com/package/@hpcc-js/wasm-graphviz).

@@ -1,4 +1,3 @@
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 
 import { translate } from '@docusaurus/Translate';
@@ -7,14 +6,17 @@ import HeroSection from '@site/src/components/HeroSection';
 import Tools from '@site/src/components/Tools/Tools';
 
 export default function LandingPage(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={translate({
-        message: 'Simplify graph visualization with a variety of tools',
-        description: 'The title of the landing page',
+        id: 'index.title',
+        message: 'Simplify graph visualization with a variety of tools.',
       })}
-      description={siteConfig.tagline}
+      description={translate({
+        id: 'index.description',
+        message:
+          'Leverage the power of Graphviz in your TypeScript and JavaScript projects with ts-graphviz. Simplify graph visualization using a variety of tools.',
+      })}
     >
       <HeroSection />
       <main>

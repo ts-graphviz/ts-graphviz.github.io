@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+description: Key terms in ts-graphviz explained for easy reference.
 ---
 # Glossary
 
