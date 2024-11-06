@@ -1,17 +1,19 @@
-import Admonition from '@theme/Admonition';
 import CodeBlock from '@theme/CodeBlock';
 import TabItem from '@theme/TabItem';
 import Tabs from '@theme/Tabs';
 import { WebContainer } from '@webcontainer/api';
+import { clsx } from 'clsx';
 import { Graphviz } from 'graphviz-react';
 import type monaco_editor from 'monaco-editor';
 import type { editor } from 'monaco-editor';
 import { memo, useState } from 'react';
+import { OrbitProgress, Riple } from 'react-loading-indicators';
 
 import TSGraphvizLiveEditor from '../TSGraphvizLiveEditor';
 import styles from './styles.module.css';
 
-const SCRIPT = `const { Script, createContext } = require('node:vm');
+const SCRIPT = `
+const { Script, createContext } = require('node:vm');
 const fs = require('node:fs/promises');
 const { RootGraph, toDot } = require('ts-graphviz');
 const ts = require('typescript');
@@ -21,6 +23,7 @@ async function runTSGraphvizScript(tsCode) {
     compilerOptions: {
       target: ts.ScriptTarget.ESNext,
       module: ts.ModuleKind.CommonJS,
+      removeComments: true,
     },
   }).outputText;
   console.log('jsCode', jsCode);
@@ -47,68 +50,79 @@ async function runTSGraphvizScript(tsCode) {
 })();
 `;
 
-type Status = 'idle' | 'processing';
+type Status = 'installing' | 'idle' | 'processing';
 
 interface Props {
   script: string;
-  height?: number | string;
+  className?: string;
 }
 
-function PreRenderInfomation() {
+function TSGraphvizPreviewEditor({ script, className }: Props): JSX.Element {
+  const [dot, setDot] = useState<string>(null);
+  const [status, setStatus] = useState<Status>('installing');
   return (
     <div>
-      <Admonition type="info">
-        <p>
-          <code>Ctrl + S</code> to Run Script.
-        </p>
-      </Admonition>
-    </div>
-  );
-}
-
-function TSGraphvizPreviewEditor({ script, height }: Props): JSX.Element {
-  const [dot, setDot] = useState<string>(null);
-  const [status, setStatus] = useState<Status>('processing');
-  return (
-    <div className={styles.container}>
-      <div>
-        <div className={styles.actionMenu}>
-          <button
-            type="button"
-            onClick={() => {
-              // monaco.editor
-            }}
-          >
-            Run
-          </button>
+      <div className={clsx([styles.container, className])}>
+        <div>
+          <TSGraphvizLiveEditor script={script} onMount={onMount} />
         </div>
-        <TSGraphvizLiveEditor
-          script={script}
-          height={height}
-          onMount={onMount}
-        />
-      </div>
-      <div>
-        <Tabs>
-          <TabItem value="image" label="Image" default>
-            {status === 'processing' ? (
-              'Processing...'
-            ) : dot ? (
-              <Graphviz dot={dot} />
-            ) : (
-              <PreRenderInfomation />
-            )}
-          </TabItem>
-          <TabItem value="dot" label="DOT">
-            {status === 'processing' ? (
-              'Processing...'
-            ) : dot ? (
-              <CodeBlock language="dot">{dot}</CodeBlock>
-            ) : (
-              <PreRenderInfomation />
-            )}
-          </TabItem>
-        </Tabs>
+        <div
+          className={styles.result}
+          style={
+            status === 'installing'
+              ? {
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }
+              : null
+          }
+        >
+          {status === 'installing' ? (
+            <OrbitProgress
+              color="#3478c6"
+              size="medium"
+              text="Installing ts-graphviz"
+              textColor="white"
+              easing="ease-in-out"
+            />
+          ) : (
+            <Tabs className={styles.tabs}>
+              <TabItem value="image" label="Image" default>
+                {status === 'processing' ? (
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                    }}
+                  >
+                    <Riple color="#3478c6" size="medium" />
+                  </div>
+                ) :(
+                  <Graphviz className={styles.graphviz} dot={dot} />
+                )}
+              </TabItem>
+              <TabItem value="dot" label="DOT">
+                <div className={styles.dot}>
+                  {status === 'processing' ? (
+                    <div
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                      }}
+                    >
+                      <Riple color="#3478c6" size="medium" />
+                    </div>
+                  ) :  (
+                    <CodeBlock language="dot">{dot}</CodeBlock>
+                  )}
+                </div>
+              </TabItem>
+            </Tabs>
+          )}
+        </div>
       </div>
     </div>
   );
@@ -150,7 +164,7 @@ function TSGraphvizPreviewEditor({ script, height }: Props): JSX.Element {
     });
     const install = await instance.spawn('npm', ['install']);
     if ((await install.exit) === 0) {
-      // console.log('npm install success');
+      await runTSGraphvizScript();
       setStatus('idle');
     }
 
@@ -159,19 +173,24 @@ function TSGraphvizPreviewEditor({ script, height }: Props): JSX.Element {
         e.preventDefault();
         setStatus('processing');
         setDot(null);
-        const code = editor.getValue();
-        console.log(code);
-        await instance.fs.writeFile('./diagram.ts', code);
-        const exec = await instance.spawn('npm', ['run', 'main']);
-        console.log('exit', await exec.exit);
-        const dot = await instance.fs.readFile('./diagram.dot', 'utf8');
-        setDot(dot);
-        await instance.fs.rm('./diagram.ts');
-        await instance.fs.rm('./diagram.dot');
-        setStatus('idle');
+        await runTSGraphvizScript();
       }
     });
+
+    async function runTSGraphvizScript() {
+      const tsCode = editor.getValue();
+
+      await instance.fs.writeFile('./diagram.ts', tsCode);
+      const exec = await instance.spawn('node', ['./main.js']);
+      console.log('exit', await exec.exit);
+      const dot = await instance.fs.readFile('./diagram.dot', 'utf8');
+      setDot(dot);
+      await instance.fs.rm('./diagram.ts');
+      await instance.fs.rm('./diagram.dot');
+      setStatus('idle');
+    }
   }
+
 }
 
 export default memo(TSGraphvizPreviewEditor);

@@ -14,3 +14,22 @@
   margin-bottom: 10px;
   height: 60px;
 }
+.result {
+  height: 100%;
+}
+
+
+.tabs {
+  height: 100%;
+}
+
+.graphviz {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dot {
+  overflow-y: scroll;
+}
