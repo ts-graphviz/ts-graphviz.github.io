@@ -1,10 +1,13 @@
-import { translate } from '@docusaurus/Translate';
-import PreviewTSGraphvizScript from '@site/src/components/PreviewTSGraphvizScript';
+import TSGraphvizPreviewEditor from '@site/src/components/TSGraphvizPreviewEditor';
 import Layout from '@theme/Layout';
+
+import Translate, { translate } from '@docusaurus/Translate';
+import Admonition from '@theme/Admonition';
+import styles from './styles.module.css';
 
 const script = `import { digraph, attribute as _ } from 'ts-graphviz';
 
-export default digraph('state_machine', { [_.newrank]: true }, (g) => {
+digraph('state_machine', { [_.newrank]: true }, (g) => {
   g.node({ shape: 'circle' });
 
   g.edge(['Model', 'DOT'], { [_.label]: 'toDot', [_.constraint]: false });
@@ -16,7 +19,7 @@ export default digraph('state_machine', { [_.newrank]: true }, (g) => {
 });
 `;
 
-export default function Playground(): JSX.Element {
+export default function Editor(): JSX.Element {
   return (
     <Layout
       title={translate({
@@ -29,15 +32,17 @@ export default function Playground(): JSX.Element {
           'Explore the ts-graphviz Playground to write and visualize Graphviz graphs interactively online. Build, edit, and render graphs using TypeScript/JavaScript directly in your browser—no installation needed.',
       })}
     >
-      <PreviewTSGraphvizScript
-        title="Hello, World!"
-        script={script}
-        options={{
-          view: 'default',
-          width: '100%',
-          height: 700,
-        }}
-      />
+      <main className={styles.main}>
+        <TSGraphvizPreviewEditor script={script} className={styles.editor} />
+        <div>
+          <Admonition type="note" title="Usage">
+            <code>Cmd/Ctrl + S</code>{' '}
+            <Translate id="editor.usage" description="The usage of the editor">
+              to Run Script.
+            </Translate>
+          </Admonition>
+        </div>
+      </main>
     </Layout>
   );
 }
