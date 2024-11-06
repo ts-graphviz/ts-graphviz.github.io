@@ -99,7 +99,7 @@ function TSGraphvizPreviewEditor({ script, className }: Props): JSX.Element {
                   >
                     <Riple color="#3478c6" size="medium" />
                   </div>
-                ) :(
+                ) : (
                   <Graphviz className={styles.graphviz} dot={dot} />
                 )}
               </TabItem>
@@ -115,7 +115,7 @@ function TSGraphvizPreviewEditor({ script, className }: Props): JSX.Element {
                     >
                       <Riple color="#3478c6" size="medium" />
                     </div>
-                  ) :  (
+                  ) : (
                     <CodeBlock language="dot">{dot}</CodeBlock>
                   )}
                 </div>
@@ -190,7 +190,6 @@ function TSGraphvizPreviewEditor({ script, className }: Props): JSX.Element {
       setStatus('idle');
     }
   }
-
 }
 
 export default memo(TSGraphvizPreviewEditor);
