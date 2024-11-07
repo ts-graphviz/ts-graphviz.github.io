@@ -39,6 +39,9 @@ function TSGraphvizLiveEditor({
           monaco.editor.EditorOption.lineHeight,
         );
         const currentLayout = editor.getLayoutInfo();
+        const MIN_HEIGHT = 100;
+        const MAX_HEIGHT = 500;
+        const PADDING = 10;
         resize();
 
         // Auto-resize on content changes
@@ -48,13 +51,12 @@ function TSGraphvizLiveEditor({
           });
         }
         function resize() {
-          const padding = 10;
           const newHeight = Math.min(
             Math.max(
-              editor.getModel().getLineCount() * lineHeight + padding,
-              100,
+            editor.getModel().getLineCount() * lineHeight + PADDING,
+            MIN_HEIGHT,
             ),
-            500,
+            MAX_HEIGHT,
           );
           editor.layout({
             height: newHeight,
@@ -62,7 +64,7 @@ function TSGraphvizLiveEditor({
           });
         }
       }),
-    [monaco],
+    [monaco, readOnly],
   );
   const dtsUrl = useBaseUrl('/dts.json');
   useEffect(() => {
