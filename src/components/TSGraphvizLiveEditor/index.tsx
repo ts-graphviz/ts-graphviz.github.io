@@ -3,7 +3,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import { Editor as Monaco, useMonaco } from '@monaco-editor/react';
 import type monaco_editor from 'monaco-editor';
 import type { editor } from 'monaco-editor';
-import { memo, useEffect } from 'react';
+import { memo, useEffect, useMemo } from 'react';
 
 interface Props {
   script: string;
@@ -14,6 +14,12 @@ interface Props {
   readOnly?: boolean;
 }
 
+// Constants for Monaco editor themes
+const MONACO_THEMES = {
+  dark: 'vs-dark',
+  light: 'vs',
+} as const;
+
 function TSGraphvizLiveEditor({
   script,
   onMount,
@@ -21,6 +27,11 @@ function TSGraphvizLiveEditor({
 }: Props): JSX.Element {
   const monaco = useMonaco();
   const { colorMode } = useColorMode();
+  // Memoize theme to prevent unnecessary re-renders
+  const editorTheme = useMemo(
+    () => (colorMode === 'dark' ? MONACO_THEMES.dark : MONACO_THEMES.light),
+    [colorMode]
+  );
   const dtsUrl = useBaseUrl('/dts.json');
   useEffect(() => {
     if (monaco) {
@@ -49,7 +60,7 @@ function TSGraphvizLiveEditor({
           defaultValue={script}
           defaultPath="file:///index.ts"
           language="typescript"
-          theme={colorMode === 'dark' ? 'vs-dark' : 'vs'}
+          theme={editorTheme}
           options={{
             minimap: { enabled: false },
             lineNumbers: 'off',
