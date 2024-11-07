@@ -13,14 +13,12 @@ import TSGraphvizLiveEditor from '@site/src/components/TSGraphvizLiveEditor';
 **Playground:**
 
  <TSGraphvizLiveEditor
-  script={`
-import { digraph, attribute as _ } from 'ts-graphviz';
+  script={`import { digraph, attribute as _ } from 'ts-graphviz';
 
 const G = digraph('G', (g) => {
     g.node('A', { [_.color]: 'red' });
     g.edge(['A', 'B'], { [_.label]: 'A to B' });
 });`}
-  height={150}
   readOnly
 />
 
