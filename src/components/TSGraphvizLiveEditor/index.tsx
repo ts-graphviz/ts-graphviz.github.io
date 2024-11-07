@@ -53,8 +53,8 @@ function TSGraphvizLiveEditor({
         function resize() {
           const newHeight = Math.min(
             Math.max(
-            editor.getModel().getLineCount() * lineHeight + PADDING,
-            MIN_HEIGHT,
+              editor.getModel().getLineCount() * lineHeight + PADDING,
+              MIN_HEIGHT,
             ),
             MAX_HEIGHT,
           );
