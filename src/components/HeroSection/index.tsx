@@ -46,7 +46,7 @@ const HeroSection: React.FC = () => {
           className="button button--secondary button--lg"
           to="https://ts-graphviz.github.io/ts-graphviz/"
         >
-          <Translate id="HeroSection.api">API Refarence 📖</Translate>
+          <Translate id="HeroSection.api">API Reference 📖</Translate>{' '}
         </Link>
       </div>
       {init ? (
