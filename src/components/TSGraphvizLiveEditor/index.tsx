@@ -3,7 +3,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import { Editor as Monaco, useMonaco } from '@monaco-editor/react';
 import type monaco_editor from 'monaco-editor';
 import type { editor } from 'monaco-editor';
-import { memo, useEffect, useMemo } from 'react';
+import { memo, useCallback, useEffect, useMemo } from 'react';
 
 interface Props {
   script: string;
@@ -22,14 +22,7 @@ const MONACO_THEMES: Record<ColorMode, string> = {
 function TSGraphvizLiveEditor({
   script,
   // Auto resize the editor to fit the content height
-  onMount = (editor) => {
-    const contentHeight = editor.getModel().getLineCount() * 20; // 20 is the height of a line of default theme.
-    const currentLayout = editor.getLayoutInfo();
-    editor.layout({
-      height: contentHeight,
-      width: currentLayout.contentWidth,
-    });
-  },
+  onMount,
   readOnly,
 }: Props): JSX.Element {
   const monaco = useMonaco();
@@ -38,6 +31,38 @@ function TSGraphvizLiveEditor({
   const editorTheme = useMemo(
     () => (colorMode === 'dark' ? MONACO_THEMES.dark : MONACO_THEMES.light),
     [colorMode],
+  );
+  const onMountCallback = useCallback(
+    onMount ??
+      ((editor: editor.IStandaloneCodeEditor) => {
+        const lineHeight = editor.getOption(
+          monaco.editor.EditorOption.lineHeight,
+        );
+        const currentLayout = editor.getLayoutInfo();
+        resize();
+
+        // Auto-resize on content changes
+        if (!readOnly) {
+          editor.getModel().onDidChangeContent(() => {
+            resize();
+          });
+        }
+        function resize() {
+          const padding = 10;
+          const newHeight = Math.min(
+            Math.max(
+              editor.getModel().getLineCount() * lineHeight + padding,
+              100,
+            ),
+            500,
+          );
+          editor.layout({
+            height: newHeight,
+            width: currentLayout.contentWidth,
+          });
+        }
+      }),
+    [monaco],
   );
   const dtsUrl = useBaseUrl('/dts.json');
   useEffect(() => {
@@ -78,7 +103,7 @@ function TSGraphvizLiveEditor({
             lineDecorationsWidth: 0,
             readOnly,
           }}
-          onMount={onMount}
+          onMount={onMountCallback}
         />
       ) : null}
     </>
