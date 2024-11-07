@@ -40,7 +40,16 @@ export default function Editor(): JSX.Element {
               id="editor.usage"
               description="The usage of the editor"
               values={{
-                command: <code>Cmd/Ctrl + S</code>,
+                command: (
+                  <code
+                    aria-label={translate({
+                      id: 'editor.save-command',
+                      message: 'Command or Control plus S key',
+                    })}
+                  >
+                    Cmd/Ctrl + S
+                  </code>
+                ),
               }}
             >
               {'{command} to Run Script.'}

@@ -540,5 +540,8 @@
   "editor.usage": {
     "message": "{command} でスクリプトを実行します。",
     "description": "The usage of the editor"
+  },
+  "editor.save-command": {
+    "message": "Command か Control と S キー"
   }
 }
