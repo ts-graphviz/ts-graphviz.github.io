@@ -1,7 +1,6 @@
 ---
 description: Explore core APIs for graph creation and manipulation.
 ---
-import TSGraphvizLiveEditor from '@site/src/components/TSGraphvizLiveEditor';
 
 
 # Core Features
@@ -12,15 +11,14 @@ import TSGraphvizLiveEditor from '@site/src/components/TSGraphvizLiveEditor';
 
 **Playground:**
 
- <TSGraphvizLiveEditor
-  script={`import { digraph, attribute as _ } from 'ts-graphviz';
+```ts ts-graphviz:read-only
+import { digraph, attribute as _ } from 'ts-graphviz';
 
 const G = digraph('G', (g) => {
-    g.node('A', { [_.color]: 'red' });
-    g.edge(['A', 'B'], { [_.label]: 'A to B' });
-});`}
-  readOnly
-/>
+  g.node('A', { [_.color]: 'red' });
+  g.edge(['A', 'B'], { [_.label]: 'A to B' });
+});
+```
 
 :::tip
 Hover over `digraph` or `g.node` or `[_.color]` for type hints.
