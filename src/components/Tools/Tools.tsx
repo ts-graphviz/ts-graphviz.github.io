@@ -56,7 +56,7 @@ const Tools: React.FC = () => (
             <tool.Svg fill={tool.fill} className={styles.toolSvg} role="img" />
           </div>
           <p>{tool.description}</p>
-          <Link href={tool.link} target="_blank" rel="noopener noreferrer">
+          <Link to={tool.link} target="_blank" rel="noopener noreferrer">
             <Translate id="Tools.learnMore">Learn More</Translate>
           </Link>
         </div>
