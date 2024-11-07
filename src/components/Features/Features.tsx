@@ -66,9 +66,9 @@ const features = [
 
 const Features: React.FC = () => (
   <section id="features" className={styles.features}>
-    <h2>
+    <Heading as="h2">
       <Translate id="Features.title">Why Choose ts-graphviz?</Translate>
-    </h2>
+    </Heading>
     <div className={styles.featureList}>
       {features.map(({ title, Svg, description }) => (
         <div key={title} className={styles.featureItem}>

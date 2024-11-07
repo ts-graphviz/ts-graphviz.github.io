@@ -1,4 +1,6 @@
+import Link from '@docusaurus/Link';
 import Translate, { translate } from '@docusaurus/Translate';
+import Heading from '@theme/Heading';
 import styles from './Tools.module.css';
 
 // NOTE: Get icons from https://simpleicons.org/
@@ -43,20 +45,20 @@ const tools = [
 
 const Tools: React.FC = () => (
   <section id="tools" className={styles.tools}>
-    <h2>
+    <Heading as="h2">
       <Translate id="Tools.title">Our Tools and Libraries</Translate>
-    </h2>
+    </Heading>
     <div className={styles.toolList}>
       {tools.map((tool) => (
         <div key={tool.name} className={styles.toolItem}>
           <div className={styles.toolItemHeader}>
-            <h3>{tool.name}</h3>
+            <Heading as="h3">{tool.name}</Heading>
             <tool.Svg fill={tool.fill} className={styles.toolSvg} role="img" />
           </div>
           <p>{tool.description}</p>
-          <a href={tool.link} target="_blank" rel="noopener noreferrer">
+          <Link href={tool.link} target="_blank" rel="noopener noreferrer">
             <Translate id="Tools.learnMore">Learn More</Translate>
-          </a>
+          </Link>
         </div>
       ))}
     </div>
