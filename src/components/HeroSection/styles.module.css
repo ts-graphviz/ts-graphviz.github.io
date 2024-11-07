@@ -2,13 +2,27 @@
   text-align: center;
   padding: 80px 16px;
   position: relative;
+}
+
+.background {
   background: var(--ifm-color-primary-lighter);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
   z-index: -2;
 }
 
-[data-theme="dark"] .hero {
+[data-theme="dark"] .background {
   background: var(--ifm-color-primary-darker);
 }
+.content {
+  z-index: 100;
+}
+
 .particles {
   position: absolute;
   top: 0;
