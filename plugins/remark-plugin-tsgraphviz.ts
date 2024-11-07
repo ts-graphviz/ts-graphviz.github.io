@@ -2,7 +2,6 @@ import type { Code, Literal } from 'mdast';
 import type { Plugin, Transformer } from 'unified';
 import type { Node, Parent } from 'unist';
 
-
 // biome-ignore lint/complexity/noBannedTypes: Preliminary implementation for future plugin extensibility.
 type PluginOptions = {};
 
