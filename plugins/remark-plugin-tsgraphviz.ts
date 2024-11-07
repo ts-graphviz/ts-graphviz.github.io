@@ -5,16 +5,13 @@ import type { Node, Parent } from 'unist';
 type Plugin<T> = any; // TODO fix this asap
 
 // biome-ignore lint/complexity/noBannedTypes: TODO
-type PluginOptions = {
-};
+type PluginOptions = {};
 
 type CodeBlockOptions = {
   readOnly: boolean;
-}
+};
 
-const transformNode = (
-  code: Code,
-) => {
+const transformNode = (code: Code) => {
   const script = code.value;
   const options = getTSGraphvizOptions(code);
   return [
@@ -33,8 +30,7 @@ const transformNode = (
           value: options.readOnly ? 'true' : 'false',
         },
       ],
-      children: [
-      ],
+      children: [],
     },
   ] as any[];
 };
@@ -43,7 +39,8 @@ const isMdxEsmLiteral = (node: Node): node is Literal =>
   node.type === 'mdxjsEsm';
 // TODO legacy approximation, good-enough for now but not 100% accurate
 const isTSGraphvizLiveEditorImport = (node: Node): boolean =>
-  isMdxEsmLiteral(node) && node.value.includes('@site/src/components/TSGraphvizLiveEditor');
+  isMdxEsmLiteral(node) &&
+  node.value.includes('@site/src/components/TSGraphvizLiveEditor');
 
 const isParent = (node: Node): node is Parent =>
   Array.isArray((node as Parent).children);
@@ -54,7 +51,7 @@ const getTSGraphvizOptions = (code: Code): CodeBlockOptions => {
   const options = code.meta.split(':').slice(1);
   return {
     readOnly: options.includes('read-only'),
-  }
+  };
 };
 
 function createImportNode() {
@@ -71,7 +68,7 @@ function createImportNode() {
             specifiers: [
               {
                 type: 'ImportDefaultSpecifier',
-                local: {type: 'Identifier', name: 'TSGraphvizLiveEditor'},
+                local: { type: 'Identifier', name: 'TSGraphvizLiveEditor' },
               },
             ],
             source: {
@@ -89,7 +86,7 @@ function createImportNode() {
 
 const plugin: Plugin<[PluginOptions?]> = (options = {}): Transformer => {
   return async (root) => {
-    const {visit} = await import('unist-util-visit');
+    const { visit } = await import('unist-util-visit');
 
     let transformed = false;
     let alreadyImported = false;

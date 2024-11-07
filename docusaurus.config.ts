@@ -4,7 +4,6 @@ import type { Config } from '@docusaurus/types';
 import { themes as prismThemes } from 'prism-react-renderer';
 import tsgraphviz from './plugins/remark-plugin-tsgraphviz';
 
-
 const config: Config = {
   title: 'ts-graphviz',
   tagline:
