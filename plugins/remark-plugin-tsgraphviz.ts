@@ -1,10 +1,9 @@
 import type { Code, Literal } from 'mdast';
-import type { Transformer } from 'unified';
+import type { Plugin, Transformer } from 'unified';
 import type { Node, Parent } from 'unist';
 
-type Plugin<T> = any; // TODO fix this asap
 
-// biome-ignore lint/complexity/noBannedTypes: TODO
+// biome-ignore lint/complexity/noBannedTypes: Preliminary implementation for future plugin extensibility.
 type PluginOptions = {};
 
 type CodeBlockOptions = {
@@ -37,7 +36,7 @@ const transformNode = (code: Code) => {
 
 const isMdxEsmLiteral = (node: Node): node is Literal =>
   node.type === 'mdxjsEsm';
-// TODO legacy approximation, good-enough for now but not 100% accurate
+
 const isTSGraphvizLiveEditorImport = (node: Node): boolean =>
   isMdxEsmLiteral(node) &&
   node.value.includes('@site/src/components/TSGraphvizLiveEditor');
@@ -48,7 +47,7 @@ const isTSGraphvizScript = (node: Node): node is Code =>
   node.type === 'code' && (node as Code).meta?.startsWith('ts-graphviz');
 
 const getTSGraphvizOptions = (code: Code): CodeBlockOptions => {
-  const options = code.meta.split(':').slice(1);
+  const options = code.meta ? code.meta.split(':').slice(1) : [];
   return {
     readOnly: options.includes('read-only'),
   };
@@ -118,6 +117,4 @@ const plugin: Plugin<[PluginOptions?]> = (options = {}): Transformer => {
   };
 };
 
-// To continue supporting `require('npm2yarn')` without the `.default` ㄟ(▔,▔)ㄏ
-// TODO change to export default after migrating to ESM
 export default plugin;
