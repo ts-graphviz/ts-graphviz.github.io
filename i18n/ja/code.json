@@ -538,7 +538,7 @@
     "description": "The text for authors with 0 blog post"
   },
   "editor.usage": {
-    "message": "でスクリプトを実行します。",
+    "message": "{command} でスクリプトを実行します。",
     "description": "The usage of the editor"
   }
 }

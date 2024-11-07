@@ -25,6 +25,7 @@
     "@docusaurus/preset-classic": "3.6.0",
     "@docusaurus/remark-plugin-npm2yarn": "^3.6.0",
     "@docusaurus/theme-classic": "^3.6.0",
+    "@docusaurus/theme-common": "^3.6.0",
     "@mdx-js/react": "^3.0.0",
     "@monaco-editor/react": "^4.6.0",
     "@stackblitz/sdk": "^1.11.0",
@@ -47,6 +48,7 @@
     "@docusaurus/tsconfig": "3.6.0",
     "@docusaurus/types": "3.6.0",
     "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
     "raw-loader": "^4.0.2",
     "typescript": "~5.6.3",
     "utility-types": "^3.11.0"
