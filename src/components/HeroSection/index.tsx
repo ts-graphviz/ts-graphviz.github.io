@@ -26,6 +26,7 @@ const HeroSection: React.FC = () => {
           Bringing the power of Graphviz to the TypeScript/JavaScript ecosystem.
         </Translate>
       </Heading>
+      <div className={styles.background} />
       <img src={useBaseUrl('/img/logo.png')} alt="ts-graphviz" />
       <p>
         <Translate id="HeroSection.headline">
@@ -45,6 +46,8 @@ const HeroSection: React.FC = () => {
         <Link
           className="button button--secondary button--lg"
           to="https://ts-graphviz.github.io/ts-graphviz/"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <Translate id="HeroSection.api">API Reference 📖</Translate>{' '}
         </Link>
