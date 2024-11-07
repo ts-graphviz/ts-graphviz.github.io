@@ -21,7 +21,15 @@ const MONACO_THEMES: Record<ColorMode, string> = {
 
 function TSGraphvizLiveEditor({
   script,
-  onMount,
+  // Auto resize the editor to fit the content height
+  onMount = (editor) => {
+    const contentHeight = editor.getModel().getLineCount() * 20; // 20 is the height of a line of default theme.
+    const currentLayout = editor.getLayoutInfo();
+    editor.layout({
+      height: contentHeight,
+      width: currentLayout.contentWidth,
+    });
+  },
   readOnly,
 }: Props): JSX.Element {
   const monaco = useMonaco();
