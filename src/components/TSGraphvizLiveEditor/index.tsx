@@ -1,9 +1,9 @@
-// import { useColorMode } from '@docusaurus/theme-common';
+import { type ColorMode, useColorMode } from '@docusaurus/theme-common';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { Editor as Monaco, useMonaco } from '@monaco-editor/react';
 import type monaco_editor from 'monaco-editor';
 import type { editor } from 'monaco-editor';
-import { memo, useEffect } from 'react';
+import { memo, useEffect, useMemo } from 'react';
 
 interface Props {
   script: string;
@@ -14,13 +14,23 @@ interface Props {
   readOnly?: boolean;
 }
 
+const MONACO_THEMES: Record<ColorMode, string> = {
+  dark: 'vs-dark',
+  light: 'vs',
+} as const;
+
 function TSGraphvizLiveEditor({
   script,
   onMount,
   readOnly,
 }: Props): JSX.Element {
   const monaco = useMonaco();
-  // const { colorMode } = useColorMode();
+  const { colorMode } = useColorMode();
+  // Memoize theme to prevent unnecessary re-renders
+  const editorTheme = useMemo(
+    () => (colorMode === 'dark' ? MONACO_THEMES.dark : MONACO_THEMES.light),
+    [colorMode],
+  );
   const dtsUrl = useBaseUrl('/dts.json');
   useEffect(() => {
     if (monaco) {
@@ -49,8 +59,7 @@ function TSGraphvizLiveEditor({
           defaultValue={script}
           defaultPath="file:///index.ts"
           language="typescript"
-          theme="vs-dark"
-          // theme={colorMode === 'dark' ? 'vs-dark' : 'vs'}
+          theme={editorTheme}
           options={{
             minimap: { enabled: false },
             lineNumbers: 'off',

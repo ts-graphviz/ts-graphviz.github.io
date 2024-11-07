@@ -538,7 +538,10 @@
     "description": "The text for authors with 0 blog post"
   },
   "editor.usage": {
-    "message": "でスクリプトを実行します。",
+    "message": "{command} でスクリプトを実行します。",
     "description": "The usage of the editor"
+  },
+  "editor.save-command": {
+    "message": "Command か Control と S キー"
   }
 }

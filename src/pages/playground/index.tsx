@@ -36,9 +36,23 @@ export default function Editor(): JSX.Element {
         <TSGraphvizPreviewEditor script={script} className={styles.editor} />
         <div>
           <Admonition type="note" title="Usage">
-            <code>Cmd/Ctrl + S</code>{' '}
-            <Translate id="editor.usage" description="The usage of the editor">
-              to Run Script.
+            <Translate
+              id="editor.usage"
+              description="The usage of the editor"
+              values={{
+                command: (
+                  <code
+                    aria-label={translate({
+                      id: 'editor.save-command',
+                      message: 'Command or Control plus S key',
+                    })}
+                  >
+                    Cmd/Ctrl + S
+                  </code>
+                ),
+              }}
+            >
+              {'{command} to Run Script.'}
             </Translate>
           </Admonition>
         </div>
