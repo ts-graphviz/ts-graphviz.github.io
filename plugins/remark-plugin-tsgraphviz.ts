@@ -1,4 +1,5 @@
 import type { Code, Literal } from 'mdast';
+import type { MdxJsxFlowElement } from 'mdast-util-mdx-jsx';
 import type { Plugin, Transformer } from 'unified';
 import type { Node, Parent } from 'unist';
 
@@ -9,7 +10,7 @@ type CodeBlockOptions = {
   readOnly: boolean;
 };
 
-const transformNode = (code: Code) => {
+const transformNode = (code: Code): MdxJsxFlowElement[] => {
   const script = code.value;
   const options = getTSGraphvizOptions(code);
   return [
@@ -30,7 +31,7 @@ const transformNode = (code: Code) => {
       ],
       children: [],
     },
-  ] as any[];
+  ];
 };
 
 const isMdxEsmLiteral = (node: Node): node is Literal =>
@@ -95,18 +96,16 @@ const plugin: Plugin<[PluginOptions?]> = (options = {}): Transformer => {
       }
 
       if (isParent(node)) {
-        let index = 0;
-        while (index < node.children.length) {
-          const child = node.children[index]!;
+        const newChildren: Node[] = [];
+        for (const child of node.children) {
           if (isTSGraphvizScript(child)) {
-            const result = transformNode(child);
-            node.children.splice(index, 1, ...result);
-            index += result.length;
+            newChildren.push(...transformNode(child));
             transformed = true;
           } else {
-            index += 1;
+            newChildren.push(child);
           }
         }
+        node.children = newChildren;
       }
     });
 
