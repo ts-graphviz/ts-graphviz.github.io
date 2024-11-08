@@ -2,6 +2,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 import npm2yarn from '@docusaurus/remark-plugin-npm2yarn';
 import type { Config } from '@docusaurus/types';
 import { themes as prismThemes } from 'prism-react-renderer';
+import tsgraphviz from './plugins/remark-plugin-tsgraphviz';
 
 const config: Config = {
   title: 'ts-graphviz',
@@ -31,6 +32,7 @@ const config: Config = {
             'https://pr.new/github.com//ts-graphviz/ts-graphviz.github.io/edit/main/',
           remarkPlugins: [
             [npm2yarn, { sync: true, converters: ['yarn', 'pnpm'] }],
+            [tsgraphviz, {}],
           ],
         },
         blog: {
@@ -39,11 +41,13 @@ const config: Config = {
             'https://pr.new/github.com//ts-graphviz/ts-graphviz.github.io/edit/main/',
           remarkPlugins: [
             [npm2yarn, { sync: true, converters: ['yarn', 'pnpm'] }],
+            [tsgraphviz, {}],
           ],
         },
         pages: {
           remarkPlugins: [
             [npm2yarn, { sync: true, converters: ['yarn', 'pnpm'] }],
+            [tsgraphviz, {}],
           ],
         },
         theme: {

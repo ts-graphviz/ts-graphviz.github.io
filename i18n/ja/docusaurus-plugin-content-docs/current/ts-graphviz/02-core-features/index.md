@@ -1,7 +1,6 @@
 ---
 description: グラフ作成と操作のためのts-graphvizの主要なAPIを紹介
 ---
-import TSGraphvizLiveEditor from '@site/src/components/TSGraphvizLiveEditor';
 
 # コア機能
 
@@ -9,17 +8,14 @@ import TSGraphvizLiveEditor from '@site/src/components/TSGraphvizLiveEditor';
 
 `ts-graphviz` は TypeScript とシームレスに統合された API を提供し、強力な型定義と完全な IntelliSense サポートを備えています。これにより、開発中のエラーをより簡単に発見でき、開発者の体験が向上します。
 
-**プレイグラウンド:**
-
-<TSGraphvizLiveEditor
-  script={`import { digraph, attribute as _ } from 'ts-graphviz';
+```ts ts-graphviz:read-only
+import { digraph, attribute as _ } from 'ts-graphviz';
 
 const G = digraph('G', (g) => {
-    g.node('A', { [_.color]: 'red' });
-    g.edge(['A', 'B'], { [_.label]: 'A to B' });
-});`}
-  readOnly
-/>
+  g.node('A', { [_.color]: 'red' });
+  g.edge(['A', 'B'], { [_.label]: 'A to B' });
+});
+```
 
 :::tip
 `digraph` や `g.node`、`[_.color]` にカーソルを合わせると型のヒントが表示されます。
