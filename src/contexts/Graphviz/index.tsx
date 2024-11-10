@@ -9,7 +9,7 @@ import {
   useState,
 } from 'react';
 
-const GraphVizContext = createContext<Graphviz>(null);
+const GraphVizContext = createContext<Graphviz | null>(null);
 
 type GraphvizAPI = {
   status: 'loading' | 'ready';

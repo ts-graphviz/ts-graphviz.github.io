@@ -27,7 +27,7 @@ function TSGraphvizPreviewEditor({ script, className }: Props): JSX.Element {
     if (!dot && container.status === 'ready') {
       container.run(script).then(setDot);
     }
-  }, [dot, container]);
+  }, [dot, container.status, container.run, script, setDot]);
 
   const [tsCode, setTsCode] = useState<string>(script);
   const onChangeCallback = useCallback(

@@ -16,7 +16,7 @@ export interface Container {
   run(script: string): Promise<string>;
 }
 
-const ContainerContext = createContext<Container | null>(null);
+const ContainerContext = createContext<WebContainer | null>(null);
 
 const SCRIPT = `
 const { Script, createContext } = require('node:vm');
@@ -61,13 +61,11 @@ type Status = 'booted' | 'installing' | 'ready' | 'processing';
 export const ContainerProvider: FC<{ children: ReactNode }> = memo(
   ({ children }) => {
     const [instance, setInstance] = useState<WebContainer>();
-    const [status, setStatus] = useState<Status>();
     useEffect(() => {
       (async () => {
         const instance = await WebContainer.boot({
           coep: 'none',
         });
-        setStatus('booted');
         await instance.mount({
           'package.json': {
             file: {
@@ -98,42 +96,10 @@ export const ContainerProvider: FC<{ children: ReactNode }> = memo(
         });
         setInstance(instance);
       })();
-    }, [setStatus, setInstance]);
-
-    const init = useCallback(async () => {
-      if (!instance || status !== 'booted') {
-        return;
-      }
-      setStatus('installing');
-      const install = await instance.spawn('npm', ['install']);
-      if ((await install.exit) === 0) {
-        setStatus('ready');
-      }
-    }, [instance, status, setStatus]);
-
-    const run = useCallback(
-      async (script: string) => {
-        console.log('run', script, instance, status);
-        if (!instance || status !== 'ready') {
-          return;
-        }
-        setStatus('processing');
-        try {
-          await instance.fs.writeFile('./diagram.ts', script);
-          const exec = await instance.spawn('node', ['./main.js']);
-          console.log('exit', await exec.exit);
-          return await instance.fs.readFile('./diagram.dot', 'utf8');
-        } finally {
-          await instance.fs.rm('./diagram.ts', { force: true });
-          await instance.fs.rm('./diagram.dot', { force: true });
-          setStatus('ready');
-        }
-      },
-      [instance, status, setStatus],
-    );
+    }, [setInstance]);
 
     return (
-      <ContainerContext.Provider value={{ status, init, run }}>
+      <ContainerContext.Provider value={instance}>
         {children}
       </ContainerContext.Provider>
     );
@@ -141,7 +107,40 @@ export const ContainerProvider: FC<{ children: ReactNode }> = memo(
 );
 
 export const useContainer = (): Container => {
-  const { status, init, run } = useContext(ContainerContext);
+  const instance = useContext(ContainerContext);
+  const [status, setStatus] = useState<Status>('booted');
+  const init = useCallback(async () => {
+    if (!instance || status !== 'booted') {
+      return;
+    }
+    setStatus('installing');
+    const install = await instance.spawn('npm', ['install']);
+    if ((await install.exit) === 0) {
+      setStatus('ready');
+    }
+  }, [instance, status, setStatus]);
+
+  const run = useCallback(
+    async (script: string) => {
+      console.log('run', script, instance, status);
+      if (!instance || status !== 'ready') {
+        return;
+      }
+      setStatus('processing');
+      try {
+        await instance.fs.writeFile('./diagram.ts', script);
+        const exec = await instance.spawn('node', ['./main.js']);
+        console.log('exit', await exec.exit);
+        return await instance.fs.readFile('./diagram.dot', 'utf8');
+      } finally {
+        await instance.fs.rm('./diagram.ts', { force: true });
+        await instance.fs.rm('./diagram.dot', { force: true });
+        setStatus('ready');
+      }
+    },
+    [instance, status, setStatus],
+  );
+
   useEffect(() => {
     if (status === 'booted') {
       init();
