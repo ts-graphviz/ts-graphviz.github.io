@@ -29,7 +29,6 @@
     "@hpcc-js/wasm-graphviz": "^1.6.1",
     "@mdx-js/react": "^3.0.0",
     "@monaco-editor/react": "^4.6.0",
-    "@stackblitz/sdk": "^1.11.0",
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
