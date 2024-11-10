@@ -1,16 +1,22 @@
 import { type ColorMode, useColorMode } from '@docusaurus/theme-common';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { Editor as Monaco, useMonaco } from '@monaco-editor/react';
-import type monaco_editor from 'monaco-editor';
+import {
+  Editor as Monaco,
+  type OnChange,
+  type OnMount,
+  useMonaco,
+} from '@monaco-editor/react';
+import clsx from 'clsx';
 import type { editor } from 'monaco-editor';
 import { memo, useCallback, useEffect, useMemo } from 'react';
 
+import styles from './styles.module.css';
+
 interface Props {
   script: string;
-  onMount?: (
-    editor: editor.IStandaloneCodeEditor,
-    monaco: typeof monaco_editor,
-  ) => void;
+  className?: string;
+  onMount?: OnMount;
+  onChange?: OnChange;
   readOnly?: boolean;
 }
 
@@ -21,9 +27,11 @@ const MONACO_THEMES: Record<ColorMode, string> = {
 
 function TSGraphvizLiveEditor({
   script,
+  className,
   // Auto resize the editor to fit the content height
   onMount,
   readOnly,
+  onChange,
 }: Props): JSX.Element {
   const monaco = useMonaco();
   const { colorMode } = useColorMode();
@@ -90,6 +98,7 @@ function TSGraphvizLiveEditor({
     <>
       {monaco ? (
         <Monaco
+          className={clsx(className, styles.editor)}
           defaultLanguage="typescript"
           defaultValue={script}
           defaultPath="file:///index.ts"
@@ -97,15 +106,13 @@ function TSGraphvizLiveEditor({
           theme={editorTheme}
           options={{
             minimap: { enabled: false },
-            lineNumbers: 'off',
             renderLineHighlight: 'none',
-            overviewRulerLanes: 0,
             hideCursorInOverviewRuler: true,
-            scrollBeyondLastLine: false,
             lineDecorationsWidth: 0,
             readOnly,
           }}
           onMount={onMountCallback}
+          onChange={onChange}
         />
       ) : null}
     </>

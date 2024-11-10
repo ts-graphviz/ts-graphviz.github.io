@@ -1,56 +1,19 @@
+import type { Engine } from '@hpcc-js/wasm-graphviz';
+// import { monaco as monaco_editor } from 'monaco-editor';
 import CodeBlock from '@theme/CodeBlock';
 import TabItem from '@theme/TabItem';
 import Tabs from '@theme/Tabs';
-import { WebContainer } from '@webcontainer/api';
 import { clsx } from 'clsx';
-import { Graphviz } from 'graphviz-react';
-import type monaco_editor from 'monaco-editor';
-import type { editor } from 'monaco-editor';
-import { memo, useState } from 'react';
+import { memo, useCallback, useEffect, useMemo, useState } from 'react';
 import { OrbitProgress, Riple } from 'react-loading-indicators';
 
-import TSGraphvizLiveEditor from '../TSGraphvizLiveEditor';
+import { Graphviz } from '@site/src/components/Graphviz';
+import { useContainer } from '@site/src/contexts/WebContainer';
+
+import Translate, { translate } from '@docusaurus/Translate';
+import TSGraphvizLiveEditor from '@site/src/components/TSGraphvizLiveEditor';
+import { useGraphviz } from '@site/src/contexts/Graphviz';
 import styles from './styles.module.css';
-
-const SCRIPT = `
-const { Script, createContext } = require('node:vm');
-const fs = require('node:fs/promises');
-const { RootGraph, toDot } = require('ts-graphviz');
-const ts = require('typescript');
-
-async function runTSGraphvizScript(tsCode) {
-  const jsCode = ts.transpileModule(tsCode, {
-    compilerOptions: {
-      target: ts.ScriptTarget.ESNext,
-      module: ts.ModuleKind.CommonJS,
-      removeComments: true,
-    },
-  }).outputText;
-  console.log('jsCode', jsCode);
-  const script = new Script(jsCode);
-
-  const result = script.runInContext(createContext({
-    require,
-    exports,
-  }));
-
-  if (result instanceof RootGraph) {
-    return toDot(result);
-  }
-  if (typeof result === 'string') {
-    return result;
-  }
-  throw new Error('Invalid result');
-}
-
-(async () => {
-  const script = await fs.readFile('./diagram.ts', 'utf8');
-  const dot = await runTSGraphvizScript(script);
-  await fs.writeFile('./diagram.dot', dot);
-})();
-`;
-
-type Status = 'installing' | 'idle' | 'processing';
 
 interface Props {
   script: string;
@@ -59,17 +22,57 @@ interface Props {
 
 function TSGraphvizPreviewEditor({ script, className }: Props): JSX.Element {
   const [dot, setDot] = useState<string>(null);
-  const [status, setStatus] = useState<Status>('installing');
+  const container = useContainer();
+  useEffect(() => {
+    if (!dot && container.status === 'ready') {
+      container.run(script).then(setDot);
+    }
+  }, [dot, container.status, container.run, script, setDot]);
+
+  const [tsCode, setTsCode] = useState<string>(script);
+  const onChangeCallback = useCallback(
+    (value: string) => {
+      setTsCode(value);
+    },
+    [setTsCode],
+  );
+
+  const [engine, setEngine] = useState<Engine>('dot');
+
+  const run = useCallback(() => {
+    console.log('run', tsCode, container.status);
+    if (container.status === 'ready') {
+      setDot(null);
+      container.run(tsCode).then(setDot);
+    }
+  }, [container.status, container.run, tsCode, setDot]);
+  const graphviz = useGraphviz();
+  const version = useMemo(() => graphviz.version, [graphviz]);
   return (
     <div>
       <div className={clsx([styles.container, className])}>
-        <div>
-          <TSGraphvizLiveEditor script={script} onMount={onMount} />
+        <div className={styles.editorContainer}>
+          <div className={styles.actionMenu}>
+            <button
+              type="button"
+              disabled={container.status !== 'ready'}
+              onClick={run}
+              className={clsx('button button--primary')}
+            >
+              <Translate>Run</Translate>
+            </button>
+          </div>
+          <TSGraphvizLiveEditor
+            script={script}
+            className={styles.editor}
+            onMount={() => {}}
+            onChange={onChangeCallback}
+          />
         </div>
         <div
           className={styles.result}
           style={
-            status === 'installing'
+            container.status === 'booted' || container.status === 'installing'
               ? {
                   display: 'flex',
                   alignItems: 'center',
@@ -78,7 +81,8 @@ function TSGraphvizPreviewEditor({ script, className }: Props): JSX.Element {
               : null
           }
         >
-          {status === 'installing' ? (
+          {container.status === 'booted' ||
+          container.status === 'installing' ? (
             <OrbitProgress
               color="#3478c6"
               size="medium"
@@ -88,8 +92,12 @@ function TSGraphvizPreviewEditor({ script, className }: Props): JSX.Element {
             />
           ) : (
             <Tabs className={styles.tabs}>
-              <TabItem value="image" label="Image" default>
-                {status === 'processing' ? (
+              <TabItem
+                value="image"
+                label={translate({ message: 'Image' })}
+                default
+              >
+                {container.status === 'processing' ? (
                   <div
                     style={{
                       display: 'flex',
@@ -100,12 +108,49 @@ function TSGraphvizPreviewEditor({ script, className }: Props): JSX.Element {
                     <Riple color="#3478c6" size="medium" />
                   </div>
                 ) : (
-                  <Graphviz className={styles.graphviz} dot={dot} />
+                  <>
+                    <div className={styles.graphvizHeader}>
+                      <label htmlFor="engine">
+                        {translate({
+                          message: 'Layout Engine:',
+                        })}
+                        <select
+                          id="engine"
+                          value={engine}
+                          onChange={(e) => setEngine(e.target.value as Engine)}
+                        >
+                          <option value="dot">dot</option>
+                          {/* <option value="cicro">cicro</option> */}
+                          <option value="sfdp">sfdp</option>
+                          <option value="fdp">fdp</option>
+                          <option value="neato">neato</option>
+                          <option value="osage">osage</option>
+                          <option value="patchwork">patchwork</option>
+                          <option value="twopi">twopi</option>
+                          <option value="nop">nop</option>
+                          <option value="nop2">nop2</option>
+                        </select>
+                      </label>
+                      <p>
+                        {translate(
+                          {
+                            message: 'Graphviz Version: {version}',
+                          },
+                          { version },
+                        )}
+                      </p>
+                    </div>
+                    <Graphviz
+                      className={styles.graphviz}
+                      dot={dot}
+                      engine={engine}
+                    />
+                  </>
                 )}
               </TabItem>
-              <TabItem value="dot" label="DOT">
+              <TabItem value="dot" label={translate({ message: 'DOT' })}>
                 <div className={styles.dot}>
-                  {status === 'processing' ? (
+                  {container.status === 'processing' ? (
                     <div
                       style={{
                         display: 'flex',
@@ -126,70 +171,6 @@ function TSGraphvizPreviewEditor({ script, className }: Props): JSX.Element {
       </div>
     </div>
   );
-
-  async function onMount(
-    editor: editor.IStandaloneCodeEditor,
-    monaco: typeof monaco_editor,
-  ) {
-    const instance = await WebContainer.boot({
-      coep: 'none',
-    });
-    await instance.mount({
-      'package.json': {
-        file: {
-          contents: JSON.stringify(
-            {
-              scripts: {
-                main: 'node main.js',
-              },
-              dependencies: {
-                'ts-graphviz': 'latest',
-                // '@ts-graphviz/react': 'latest',
-              },
-              devDependencies: {
-                tsx: 'latest',
-                typescript: 'latest',
-              },
-            },
-            null,
-            2,
-          ),
-        },
-      },
-      'main.js': {
-        file: {
-          contents: SCRIPT,
-        },
-      },
-    });
-    const install = await instance.spawn('npm', ['install']);
-    if ((await install.exit) === 0) {
-      await runTSGraphvizScript();
-      setStatus('idle');
-    }
-
-    editor.onKeyDown(async (e: any) => {
-      if (e.keyCode === monaco.KeyCode.KeyS && (e.ctrlKey || e.metaKey)) {
-        e.preventDefault();
-        setStatus('processing');
-        setDot(null);
-        await runTSGraphvizScript();
-      }
-    });
-
-    async function runTSGraphvizScript() {
-      const tsCode = editor.getValue();
-
-      await instance.fs.writeFile('./diagram.ts', tsCode);
-      const exec = await instance.spawn('node', ['./main.js']);
-      console.log('exit', await exec.exit);
-      const dot = await instance.fs.readFile('./diagram.dot', 'utf8');
-      setDot(dot);
-      await instance.fs.rm('./diagram.ts');
-      await instance.fs.rm('./diagram.dot');
-      setStatus('idle');
-    }
-  }
 }
 
 export default memo(TSGraphvizPreviewEditor);
