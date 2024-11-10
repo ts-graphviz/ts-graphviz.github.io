@@ -537,11 +537,19 @@
     "message": "この作者はまだブログ記事を投稿していません",
     "description": "The text for authors with 0 blog post"
   },
-  "editor.usage": {
-    "message": "{command} でスクリプトを実行します。",
-    "description": "The usage of the editor"
+  "Run": {
+    "message": "実行"
   },
-  "editor.save-command": {
-    "message": "Command か Control と S キー"
+  "Layout Engine:": {
+    "message": "レイアウトエンジン:"
+  },
+  "Graphviz Version: {version}": {
+    "message": "Graphviz バージョン: {version}"
+  },
+  "Image": {
+    "message": "画像"
+  },
+  "DOT": {
+    "message": "DOT"
   }
 }

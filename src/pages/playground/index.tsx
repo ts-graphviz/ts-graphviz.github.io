@@ -1,8 +1,7 @@
 import TSGraphvizPreviewEditor from '@site/src/components/TSGraphvizPreviewEditor';
 import Layout from '@theme/Layout';
 
-import Translate, { translate } from '@docusaurus/Translate';
-import Admonition from '@theme/Admonition';
+import { translate } from '@docusaurus/Translate';
 import styles from './styles.module.css';
 
 const script = `import { digraph, attribute as _ } from 'ts-graphviz';
@@ -34,28 +33,6 @@ export default function Editor(): JSX.Element {
     >
       <main className={styles.main}>
         <TSGraphvizPreviewEditor script={script} className={styles.editor} />
-        <div>
-          <Admonition type="note" title="Usage">
-            <Translate
-              id="editor.usage"
-              description="The usage of the editor"
-              values={{
-                command: (
-                  <code
-                    aria-label={translate({
-                      id: 'editor.save-command',
-                      message: 'Command or Control plus S key',
-                    })}
-                  >
-                    Cmd/Ctrl + S
-                  </code>
-                ),
-              }}
-            >
-              {'{command} to Run Script.'}
-            </Translate>
-          </Admonition>
-        </div>
       </main>
     </Layout>
   );
