@@ -133,7 +133,7 @@ export const ContainerProvider: FC<{ children: ReactNode }> = memo(
     );
 
     return (
-      <ContainerContext.Provider value={{status, init, run}}>
+      <ContainerContext.Provider value={{ status, init, run }}>
         {children}
       </ContainerContext.Provider>
     );
@@ -141,11 +141,11 @@ export const ContainerProvider: FC<{ children: ReactNode }> = memo(
 );
 
 export const useContainer = (): Container => {
-  const {status, init, run } = useContext(ContainerContext);
+  const { status, init, run } = useContext(ContainerContext);
   useEffect(() => {
     if (status === 'booted') {
       init();
     }
   }, [status, init]);
-  return {status, init, run};
+  return { status, init, run };
 };

@@ -1,6 +1,11 @@
 import { type ColorMode, useColorMode } from '@docusaurus/theme-common';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { Editor as Monaco, type OnChange, OnMount, useMonaco } from '@monaco-editor/react';
+import {
+  Editor as Monaco,
+  type OnChange,
+  type OnMount,
+  useMonaco,
+} from '@monaco-editor/react';
 import clsx from 'clsx';
 import type { editor } from 'monaco-editor';
 import { memo, useCallback, useEffect, useMemo } from 'react';

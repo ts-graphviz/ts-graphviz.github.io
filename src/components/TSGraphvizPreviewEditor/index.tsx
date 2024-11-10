@@ -59,9 +59,7 @@ function TSGraphvizPreviewEditor({ script, className }: Props): JSX.Element {
               onClick={run}
               className={clsx('button button--primary')}
             >
-              <Translate>
-                Run
-              </Translate>
+              <Translate>Run</Translate>
             </button>
           </div>
           <TSGraphvizLiveEditor
@@ -94,7 +92,11 @@ function TSGraphvizPreviewEditor({ script, className }: Props): JSX.Element {
             />
           ) : (
             <Tabs className={styles.tabs}>
-              <TabItem value="image" label={translate({ message: 'Image' })} default>
+              <TabItem
+                value="image"
+                label={translate({ message: 'Image' })}
+                default
+              >
                 {container.status === 'processing' ? (
                   <div
                     style={{

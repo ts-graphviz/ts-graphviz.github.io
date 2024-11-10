@@ -16,7 +16,7 @@ interface GraphvizProps {
   className?: string;
 }
 
-const Graphviz = ({ dot, engine, className}: GraphvizProps) => {
+const Graphviz = ({ dot, engine, className }: GraphvizProps) => {
   const graphviz = useGraphviz();
   const [url, setUrl] = useState<string>(null);
   useEffect(() => {
@@ -25,9 +25,11 @@ const Graphviz = ({ dot, engine, className}: GraphvizProps) => {
       setUrl(URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' })));
     }
   }, [graphviz, dot, engine, setUrl]);
-  return <div className={className}>
-    {url ? <img src={url} alt="Graphviz" /> : null}
-  </div>;
+  return (
+    <div className={className}>
+      {url ? <img src={url} alt="Graphviz" /> : null}
+    </div>
+  );
 };
 
 export { Graphviz, type GraphvizProps };
