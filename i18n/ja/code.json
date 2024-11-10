@@ -551,5 +551,11 @@
   },
   "DOT": {
     "message": "DOT"
+  },
+  "Failed to render graph: {message}": {
+    "message": "グラフのレンダリングに失敗しました: {message}"
+  },
+  "Loading...": {
+    "message": "ローディング..."
   }
 }

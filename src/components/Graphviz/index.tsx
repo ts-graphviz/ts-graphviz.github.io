@@ -1,4 +1,5 @@
 // import { type GraphvizOptions, graphviz } from 'd3-graphviz';
+import { translate } from '@docusaurus/Translate';
 import type { Engine } from '@hpcc-js/wasm-graphviz';
 import { useGraphviz } from '@site/src/contexts/Graphviz';
 import { useEffect, useState } from 'react';
@@ -19,15 +20,45 @@ interface GraphvizProps {
 const Graphviz = ({ dot, engine, className }: GraphvizProps) => {
   const graphviz = useGraphviz();
   const [url, setUrl] = useState<string>(null);
+  const [error, setError] = useState<Error | null>(null);
   useEffect(() => {
     if (dot && graphviz.status === 'ready') {
-      const svg = graphviz.renderToSVG(dot, engine);
-      setUrl(URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' })));
+      setError(null);
+      try {
+        const svg = graphviz.renderToSVG(dot, engine);
+        const newUrl = URL.createObjectURL(
+          new Blob([svg], { type: 'image/svg+xml' }),
+        );
+        setUrl(newUrl);
+        return () => URL.revokeObjectURL(newUrl);
+      } catch (e) {
+        setError(e);
+      }
     }
-  }, [graphviz, dot, engine, setUrl]);
+  }, [graphviz, dot, engine, setUrl, setError]);
   return (
     <div className={className}>
-      {url ? <img src={url} alt="Graphviz" /> : null}
+      {error ? (
+        <div className="error">
+          {translate(
+            {
+              message: 'Failed to render graph: {message}',
+            },
+            { message: error.message },
+          )}
+        </div>
+      ) : graphviz.status !== 'ready' ? (
+        <div className="loading">
+          {translate(
+            {
+              message: 'Loading...',
+            },
+            { message: error.message },
+          )}
+        </div>
+      ) : url ? (
+        <img src={url} alt={`Graph visualization: ${dot.slice(0, 50)}...`} />
+      ) : null}
     </div>
   );
 };
