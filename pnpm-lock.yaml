@@ -42,8 +42,8 @@ importers:
         specifier: ^3.5.0
         version: 3.5.0
       '@webcontainer/api':
-        specifier: ^1.4.0
-        version: 1.4.0
+        specifier: ^1.5.1
+        version: 1.5.1
       clsx:
         specifier: ^2.0.0
         version: 2.1.1
@@ -1528,8 +1528,8 @@ packages:
   '@webassemblyjs/wast-printer@1.12.1':
     resolution: {integrity: sha512-+X4WAlOisVWQMikjbcvY2e0rwPsKQ9F688lksZhBcPycBBuii3O7m8FACbDMWDojpAqvjIncrG8J0XHKyQfVeA==}
 
-  '@webcontainer/api@1.4.0':
-    resolution: {integrity: sha512-JlgyrIPW46ngSHCvXkYbbbDi0RboMt+iuy6RGB8z6B3xugk65RJaiAl0mI6qxj8z+X1dcP2P4pBpy5lIPTYsmg==}
+  '@webcontainer/api@1.5.1':
+    resolution: {integrity: sha512-+ELk+TbTOUx0LawAUdB+nnxaofg/FxUXo/Ac/+CzHSP3SOc3ebBAW3fLo4UZfvJdUW+ygWZOiQMthPLQXvKZEg==}
 
   '@xtuc/ieee754@1.2.0':
     resolution: {integrity: sha512-DX8nKgqcGwsc0eJSqYt5lwP4DH5FlHnmuWWBRy7X0NcaGR0ZtuyeESgMwTYVEtxmsNGY+qit4QYT/MIYTOTPeA==}
@@ -7118,7 +7118,7 @@ snapshots:
       '@webassemblyjs/ast': 1.12.1
       '@xtuc/long': 4.2.2
 
-  '@webcontainer/api@1.4.0': {}
+  '@webcontainer/api@1.5.1': {}
 
   '@xtuc/ieee754@1.2.0': {}
 
