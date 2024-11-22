@@ -23,7 +23,7 @@
   "dependencies": {
     "@docusaurus/core": "3.6.1",
     "@docusaurus/preset-classic": "3.6.1",
-    "@docusaurus/remark-plugin-npm2yarn": "^3.6.1",
+    "@docusaurus/remark-plugin-npm2yarn": "^3.6.2",
     "@docusaurus/theme-classic": "^3.6.1",
     "@docusaurus/theme-common": "^3.6.1",
     "@hpcc-js/wasm-graphviz": "^1.6.1",
