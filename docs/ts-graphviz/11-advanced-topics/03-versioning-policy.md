@@ -1,4 +1,6 @@
-
+---
+description: Versioning policy for ts-graphviz.
+---
 # Versioning Policy
 
 ## Overview

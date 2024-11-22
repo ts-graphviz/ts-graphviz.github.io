@@ -1,3 +1,6 @@
+---
+description: Package architecture of ts-graphviz.
+---
 # Package Architecture
 
 **ts-graphviz** consists of several packages, each with a specific role:

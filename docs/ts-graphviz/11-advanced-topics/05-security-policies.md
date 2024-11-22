@@ -1,8 +1,11 @@
+---
+description: Security policies for ts-graphviz.
+---
 # Security Policies
 
 ## Purpose and Importance
 
-In today's software development landscape, **open-source software (OSS)** plays an indispensable role in building applications. According to the **Open Source Security Foundation (OpenSSF)**, **70% to 90%** of modern applications consist of OSS components, and the complexity of their dependencies is increasing daily.
+In today's software development landscape, **Open Source Software (OSS)** plays an indispensable role in building applications. According to the **Open Source Security Foundation (OpenSSF)**, **70% to 90%** of modern applications consist of OSS components, and the complexity of their dependencies is increasing daily.
 
 ### The Impact and Responsibility of ts-graphviz
 

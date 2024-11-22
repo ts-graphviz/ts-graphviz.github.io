@@ -1,3 +1,6 @@
+---
+description: Design principles of ts-graphviz.
+---
 # Design Principles
 
 **ts-graphviz** is built around several key concepts that make it modular, extensible, and easy to use:

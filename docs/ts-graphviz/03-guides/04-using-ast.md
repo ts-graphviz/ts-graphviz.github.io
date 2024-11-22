@@ -3,10 +3,9 @@ description: Manipulate DOT graphs at the AST level with @ts-graphviz/ast.
 ---
 # Using Abstract Syntax Tree (AST)
 
-For advanced use cases, `@ts-graphviz/ast` provides an API to handle Abstract Syntax Trees (ASTs) of DOT language graphs.
+For advanced use cases, `ts-graphviz/ast` module provides an API to handle Abstract Syntax Trees (ASTs) of DOT language graphs.
 
 ## Available Functions
-
 
 The following functions are provided:
 
@@ -27,7 +26,7 @@ The `toDot` function provided by the `ts-graphviz` package is a composition of `
 
 
 ```typescript
-import { parse } from '@ts-graphviz/ast';
+import { parse } from 'ts-graphviz/ast';
 
 const ast = parse(`
   digraph example {
