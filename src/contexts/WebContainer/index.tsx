@@ -1,4 +1,6 @@
+import BrowserOnly from '@docusaurus/BrowserOnly';
 import { WebContainer } from '@webcontainer/api';
+
 import {
   type FC,
   type ReactNode,
@@ -58,64 +60,74 @@ async function runTSGraphvizScript(tsCode) {
 
 type Status = 'booted' | 'installing' | 'ready' | 'processing';
 
-// biome-ignore lint/complexity/useLiteralKeys: This is a temporary solution
-window['__webcontainer'] = window['__webcontainer'] ?? null;
-
 export const ContainerProvider: FC<{ children: ReactNode }> = memo(
-  ({ children }) => {
-    const [instance, setInstance] = useState<WebContainer>();
-    useEffect(() => {
-      (async () => {
-        const instance =
-          // biome-ignore lint/complexity/useLiteralKeys: This is a temporary solution
-          window['__webcontainer'] ||
-          (await WebContainer.boot({
-            coep: 'none',
-          }));
-
+  ({ children }) => (
+    <BrowserOnly
+      fallback={
+        <ContainerContext.Provider value={null}>
+          {children}
+        </ContainerContext.Provider>
+      }
+    >
+      {() => {
         // biome-ignore lint/complexity/useLiteralKeys: This is a temporary solution
-        if (!window['__webcontainer']) {
-          // biome-ignore lint/complexity/useLiteralKeys: This is a temporary solution
-          window['__webcontainer'] = instance;
-        }
-        await instance.mount({
-          'package.json': {
-            file: {
-              contents: JSON.stringify(
-                {
-                  scripts: {
-                    main: 'node main.js',
-                  },
-                  dependencies: {
-                    'ts-graphviz': 'latest',
-                    // '@ts-graphviz/react': 'latest',
-                  },
-                  devDependencies: {
-                    tsx: 'latest',
-                    typescript: 'latest',
-                  },
-                },
-                null,
-                2,
-              ),
-            },
-          },
-          'main.js': {
-            file: {
-              contents: SCRIPT,
-            },
-          },
-        });
-        setInstance(instance);
-      })();
-    }, [setInstance]);
+        window['__webcontainer'] = window['__webcontainer'] ?? null;
 
-    return (
-      <ContainerContext.Provider value={instance}>
-        {children}
-      </ContainerContext.Provider>
-    );
-  },
+        const [instance, setInstance] = useState<WebContainer>();
+        useEffect(() => {
+          (async () => {
+            const instance =
+              // biome-ignore lint/complexity/useLiteralKeys: This is a temporary solution
+              window['__webcontainer'] ||
+              (await WebContainer.boot({
+                coep: 'none',
+              }));
+
+            // biome-ignore lint/complexity/useLiteralKeys: This is a temporary solution
+            if (!window['__webcontainer']) {
+              // biome-ignore lint/complexity/useLiteralKeys: This is a temporary solution
+              window['__webcontainer'] = instance;
+            }
+            await instance.mount({
+              'package.json': {
+                file: {
+                  contents: JSON.stringify(
+                    {
+                      scripts: {
+                        main: 'node main.js',
+                      },
+                      dependencies: {
+                        'ts-graphviz': 'latest',
+                        // '@ts-graphviz/react': 'latest',
+                      },
+                      devDependencies: {
+                        tsx: 'latest',
+                        typescript: 'latest',
+                      },
+                    },
+                    null,
+                    2,
+                  ),
+                },
+              },
+              'main.js': {
+                file: {
+                  contents: SCRIPT,
+                },
+              },
+            });
+            setInstance(instance);
+          })();
+        }, [setInstance]);
+
+        return (
+          <ContainerContext.Provider value={instance}>
+            {children}
+          </ContainerContext.Provider>
+        );
+      }}
+    </BrowserOnly>
+  ),
 );
 
 export const useContainer = (): Container => {
