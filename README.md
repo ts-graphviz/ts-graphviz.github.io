@@ -15,7 +15,7 @@ $ pnpm install
 $ pnpm start
 # ja
 $ pnpm start:ja
-# zh-CH
+# zh-CN
 $ pnpm start:zh
 ```
 
@@ -41,6 +41,6 @@ $ pnpm format
 ```bash
 # ja
 $ pnpm write-translations:ja
-# zh-CH
+# zh-CN
 $ pnpm write-translations:zh
 ```
