@@ -79,7 +79,7 @@ If you only need specific functionality and wish to minimize dependencies, you c
 ```json
 {
   "dependencies": {
-    "@ts-graphviz/adapter": "^2.0.0"
+    "@ts-graphviz/ast": "^2.0.0"
   }
 }
 ```
@@ -87,7 +87,7 @@ If you only need specific functionality and wish to minimize dependencies, you c
 And import:
 
 ```typescript
-import { toFile } from '@ts-graphviz/adapter';
+import { parse } from '@ts-graphviz/ast';
 ```
 
 ### 5. Migrate Type System Extensions

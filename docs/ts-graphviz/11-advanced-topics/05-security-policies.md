@@ -5,7 +5,9 @@ description: Security policies for ts-graphviz.
 
 ## Purpose and Importance
 
-In today's software development landscape, **Open Source Software (OSS)** plays an indispensable role in building applications. According to the **Open Source Security Foundation (OpenSSF)**, **70% to 90%** of modern applications consist of OSS components, and the complexity of their dependencies is increasing daily.
+In today's software development landscape, **Open Source Software (OSS)** plays an indispensable role in building applications. According to the **Open Source Security Foundation (OpenSSF)**, **70% to 90%** of modern applications consist of OSS components[^1], and the complexity of their dependencies is increasing daily.
+
+[^1]: Behlendorf, B. (2022, May 11). *Brian Behlendorf Testifies to Congress on Open Source Software Security* (original in English). The Linux Foundation. Retrieved from [https://www.linuxfoundation.org/blog/blog/lf/brian-behlendorf-testifies-open-source-software-security](https://www.linuxfoundation.org/blog/blog/lf/brian-behlendorf-testifies-open-source-software-security)
 
 ### The Impact and Responsibility of ts-graphviz
 

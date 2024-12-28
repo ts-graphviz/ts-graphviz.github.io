@@ -26,7 +26,7 @@ Ensure that [Graphviz](https://graphviz.org/download/) is installed on your syst
 ### Converting DOT to an Image Stream
 
 ```typescript
-import { toStream } from '@ts-graphviz/adapter';
+import { toStream } from 'ts-graphviz/adapter';
 
 const dot = `
   digraph example {
@@ -46,7 +46,7 @@ await stream.pipeTo(Deno.stdout.writable);
 ### Writing DOT to an Image File
 
 ```typescript
-import { toFile } from '@ts-graphviz/adapter';
+import { toFile } from 'ts-graphviz/adapter';
 
 const dot = `
   digraph example {
@@ -63,7 +63,7 @@ await toFile(dot, './result.svg', { format: 'svg' });
 - **Output Formats**: Specify the desired output format (e.g., `svg`, `png`) through the options.
 - **Runtime Compatibility**: Designed to work seamlessly in both Node.js and Deno environments.
 
-## When to Use `@ts-graphviz/adapter`
+## When to Use `ts-graphviz/adapter` module
 
 - When you need to render your graphs into image files for visualization.
 - If you want to generate images dynamically within your application.

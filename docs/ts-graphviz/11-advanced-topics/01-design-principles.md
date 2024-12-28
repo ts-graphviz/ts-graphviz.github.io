@@ -31,4 +31,4 @@ description: Design principles of ts-graphviz.
 
 1. **Multi-Paradigm Support**
 
-    The library accommodates various programming paradigms, including Object-Oriented Programming, Declarative Programming, and Functional Programming. Users can choose the style that best suits their needs, making the library versatile and adaptable.
+    The library accommodates various programming paradigms, including Object-Oriented Programming and Declarative Programming. Users can choose the style that best suits their needs, making the library versatile and adaptable.

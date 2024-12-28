@@ -3,7 +3,7 @@ description: '@ts-graphviz/astでASTレベルのDOTグラフを操作'
 ---
 # 抽象構文木（AST）の使用
 
-高度なユースケースでは、`@ts-graphviz/ast` を使用して DOT 言語グラフの抽象構文木（AST）を操作するための API を提供しています。
+高度なユースケースでは、`ts-graphviz/ast` モジュールを使用して DOT 言語グラフの抽象構文木（AST）を操作するための API を提供しています。
 
 ## 利用可能な関数
 
@@ -25,7 +25,7 @@ description: '@ts-graphviz/astでASTレベルのDOTグラフを操作'
 ### DOT 文字列を AST に解析する
 
 ```typescript
-import { parse } from '@ts-graphviz/ast';
+import { parse } from 'ts-graphviz/ast';
 
 const ast = parse(`
   digraph example {

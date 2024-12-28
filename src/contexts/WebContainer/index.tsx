@@ -58,14 +58,24 @@ async function runTSGraphvizScript(tsCode) {
 
 type Status = 'booted' | 'installing' | 'ready' | 'processing';
 
+// biome-ignore lint/complexity/useLiteralKeys: This is a temporary solution
+window['__webcontainer'] = window['__webcontainer'] ?? null;
+
 export const ContainerProvider: FC<{ children: ReactNode }> = memo(
   ({ children }) => {
     const [instance, setInstance] = useState<WebContainer>();
     useEffect(() => {
       (async () => {
-        const instance = await WebContainer.boot({
+        // biome-ignore lint/complexity/useLiteralKeys: This is a temporary solution
+        const instance = window['__webcontainer'] || await WebContainer.boot({
           coep: 'none',
         });
+
+        // biome-ignore lint/complexity/useLiteralKeys: This is a temporary solution
+        if (!window['__webcontainer']) {
+          // biome-ignore lint/complexity/useLiteralKeys: This is a temporary solution
+          window['__webcontainer'] = instance;
+        }
         await instance.mount({
           'package.json': {
             file: {
