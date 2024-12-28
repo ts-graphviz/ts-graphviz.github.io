@@ -66,10 +66,12 @@ export const ContainerProvider: FC<{ children: ReactNode }> = memo(
     const [instance, setInstance] = useState<WebContainer>();
     useEffect(() => {
       (async () => {
-        // biome-ignore lint/complexity/useLiteralKeys: This is a temporary solution
-        const instance = window['__webcontainer'] || await WebContainer.boot({
-          coep: 'none',
-        });
+        const instance =
+          // biome-ignore lint/complexity/useLiteralKeys: This is a temporary solution
+          window['__webcontainer'] ||
+          (await WebContainer.boot({
+            coep: 'none',
+          }));
 
         // biome-ignore lint/complexity/useLiteralKeys: This is a temporary solution
         if (!window['__webcontainer']) {
