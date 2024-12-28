@@ -190,6 +190,11 @@ For users interested in extending or customizing `ts-graphviz`, understanding th
 - Convert DOT strings to streams or files.
 - Use in environments where you need to render graphs to images or other formats.
 
+:::note
+You can use either `@ts-graphviz/adapter` or `ts-graphviz/adapter` imports. The latter is maintained for backward compatibility.
+:::
+
+
 ### `@ts-graphviz/ast`
 
 **Purpose**: Allows manipulation of the DOT language at the Abstract Syntax Tree (AST) level.
@@ -199,6 +204,10 @@ For users interested in extending or customizing `ts-graphviz`, understanding th
 - Parse DOT strings into AST nodes.
 - Manipulate and transform the AST programmatically.
 - Useful for advanced analysis or transformations of existing DOT code.
+
+:::note
+You can use either `@ts-graphviz/ast` or `ts-graphviz/ast` imports. The latter is maintained for backward compatibility.
+:::
 
 ### `@ts-graphviz/common`
 
