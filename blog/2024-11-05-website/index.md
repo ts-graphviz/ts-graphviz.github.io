@@ -1,6 +1,6 @@
 ---
 authors: kamiazya
-tags: [security]
+tags: [website]
 description: |-
   Announcing the launch of the new ts-graphviz website! Explore comprehensive documentation, tutorials, and our new interactive PlayGround—all available in English and Japanese—to enhance your graph visualization projects with ts-graphviz.
 ---

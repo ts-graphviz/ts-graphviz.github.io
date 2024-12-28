@@ -1,6 +1,6 @@
 ---
 authors: kamiazya
-tags: [security]
+tags: [website]
 description: |-
   新しい ts-graphviz ウェブサイトの公開をお知らせします！英語と日本語で提供される包括的なドキュメント、チュートリアル、新しいインタラクティブなプレイグラウンドを活用して、ts-graphviz でグラフ可視化プロジェクトを強化しましょう。
 ---

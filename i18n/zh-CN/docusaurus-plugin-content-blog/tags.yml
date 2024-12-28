@@ -9,3 +9,9 @@ release:
   permalink: /release
   description: |
     随时了解 ts-graphviz 库的最新版本。
+
+website:
+  label: Website
+  permalink: /website
+  description: |
+    ts-graphviz 网站的更新和新闻。
