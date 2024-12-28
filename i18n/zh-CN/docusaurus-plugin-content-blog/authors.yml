@@ -1,6 +1,6 @@
 kamiazya:
   name: Yuki Yamazaki
-  title: Founder of ts-graphviz
+  title: ts-graphviz 创始人
   url: https://github.com/kamiazya
   image_url: https://github.com/kamiazya.png
   socials:
@@ -10,7 +10,8 @@ kamiazya:
   page: true
 hao:
   name: Zeng Hao
-  title: Contributor
+  title: 贡献者
+  url: https://github.com/hao2013
   image_url: https://github.com/hao2013.png
   socials:
     github: hao2013

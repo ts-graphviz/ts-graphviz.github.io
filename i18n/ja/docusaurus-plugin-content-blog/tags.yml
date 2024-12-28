@@ -9,3 +9,9 @@ release:
   permalink: /release
   description: |
     ts-graphviz ライブラリの最新リリース情報をお届けします。
+
+website:
+  label: Website
+  permalink: /website
+  description: |
+    ts-graphviz ウェブサイトの更新情報やニュースをお届けします。
