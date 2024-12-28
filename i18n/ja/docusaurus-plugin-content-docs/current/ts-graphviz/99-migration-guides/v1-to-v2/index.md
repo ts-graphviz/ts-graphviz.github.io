@@ -79,7 +79,7 @@ import { parse } from 'ts-graphviz/ast';
 ```json
 {
   "dependencies": {
-    "@ts-graphviz/adapter": "^2.0.0"
+    "@ts-graphviz/ast": "^2.0.0"
   }
 }
 ```
@@ -87,7 +87,7 @@ import { parse } from 'ts-graphviz/ast';
 そして、インポート：
 
 ```typescript
-import { toFile } from '@ts-graphviz/adapter';
+import { parse } from '@ts-graphviz/ast';
 ```
 
 ### 5. 型システムの拡張を移行

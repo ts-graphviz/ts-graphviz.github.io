@@ -1,33 +1,31 @@
 ---
-description: Manipulate DOT graphs at the AST level with @ts-graphviz/ast.
+description: '@ts-graphviz/astでASTレベルのDOTグラフを操作'
 ---
-# Using Abstract Syntax Tree (AST)
+# 抽象構文木（AST）の使用
 
-For advanced use cases, `@ts-graphviz/ast` provides an API to handle Abstract Syntax Trees (ASTs) of DOT language graphs.
+高度なユースケースでは、`ts-graphviz/ast` モジュールを使用して DOT 言語グラフの抽象構文木（AST）を操作するための API を提供しています。
 
-## Available Functions
+## 利用可能な関数
 
+以下の関数が提供されています。
 
-The following functions are provided:
-
-- `fromModel`: Converts a **Model** to an **AST**.
-- `toModel`: Converts an **AST** to a **Model**.
-- `stringify`: Converts an **AST** to a **DOT** string.
-- `parse`: Converts a **DOT** string to an **AST**.
+- `fromModel`: **Model** を **AST** に変換します。
+- `toModel`: **AST** を **Model** に変換します。
+- `stringify`: **AST** を **DOT** 文字列に変換します。
+- `parse`: **DOT** 文字列を **AST** に変換します。
 
 ![State Machine](./img/state-machine.svg)
 
 :::note
-The `toDot` function provided by the `ts-graphviz` package is a composition of `fromModel` and `stringify`. The `fromDot` function is a composition of `parse` and `toModel`.
+`ts-graphviz` パッケージで提供されている `toDot` 関数は、`fromModel` と `stringify` の合成です。`fromDot` 関数は、`parse` と `toModel` の合成です。
 :::
 
-## Example
+## 例
 
-### Parsing a DOT String into an AST
-
+### DOT 文字列を AST に解析する
 
 ```typescript
-import { parse } from '@ts-graphviz/ast';
+import { parse } from 'ts-graphviz/ast';
 
 const ast = parse(`
   digraph example {
@@ -40,10 +38,10 @@ const ast = parse(`
 console.log(JSON.stringify(ast, null, 2));
 ```
 
-The `ast` variable now contains the AST representation of the DOT graph, which you can manipulate programmatically.
+`ast` 変数には、DOT グラフの AST 表現が含まれており、プログラム的に操作できます。
 
 <details>
-<summary>Click to view the AST structure</summary>
+<summary>AST 構造を表示するにはクリックしてください</summary>
 
 ```json
 {

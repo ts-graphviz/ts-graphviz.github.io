@@ -24,7 +24,7 @@ description: ts-graphvizでグラフをSVGやPNGの画像にレンダリング
 ### DOT を画像ストリームに変換する
 
 ```typescript
-import { toStream } from '@ts-graphviz/adapter';
+import { toStream } from 'ts-graphviz/adapter';
 
 const dot = `
   digraph example {
@@ -45,7 +45,7 @@ await stream.pipeTo(Deno.stdout.writable);
 
 
 ```typescript
-import { toFile } from '@ts-graphviz/adapter';
+import { toFile } from 'ts-graphviz/adapter';
 
 const dot = `
   digraph example {
@@ -63,7 +63,7 @@ await toFile(dot, './result.svg', { format: 'svg' });
 - **出力形式**：オプションで希望する出力形式（例：`svg`、`png`）を指定します。
 - **ランタイム互換性**：Node.js と Deno 環境の両方でシームレスに動作するように設計されています。
 
-## `ts-graphviz/adapter` を使用するタイミング
+## `ts-graphviz/adapter` モジュールを使用するタイミング
 
 - グラフを画像ファイルにレンダリングして可視化したい場合。
 - アプリケーション内で画像を動的に生成したい場合。
