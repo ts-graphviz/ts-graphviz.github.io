@@ -49,7 +49,7 @@ This approach allows you to manage dependencies in a way that best suits your pr
 
 The relationships between packages can be visualized as follows:
 
-![Dependency Graph](./img/dependency-graph.svg)
+![Package dependency graph showing relationships between ts-graphviz packages and their dependencies](./img/dependency-graph.svg)
 
 This modular architecture ensures:
 

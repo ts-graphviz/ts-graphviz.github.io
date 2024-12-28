@@ -52,7 +52,7 @@ description: ts-graphvizのパッケージアーキテクチャ
 
 パッケージ間の関係は以下のように視覚化できます：
 
-![依存関係グラフ](./img/dependency-graph.svg)
+![ts-graphviz パッケージとその依存関係を示すパッケージ依存関係グラフ](./img/dependency-graph.svg)
 
 このモジュラーアーキテクチャにより、以下が確保されます：
 
