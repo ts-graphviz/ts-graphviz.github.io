@@ -124,8 +124,8 @@ importers:
         specifier: ^2.0.5
         version: 2.0.5
       ts-graphviz:
-        specifier: ^2.1.4
-        version: 2.1.4
+        specifier: ^2.1.5
+        version: 2.1.5
 
 packages:
 
@@ -1467,16 +1467,32 @@ packages:
     resolution: {integrity: sha512-K/xd2SJskbSLcUz9uYW9IDy26I3Oyutj/LREjJgcuLMxT3um4sZfy9LiUhGErHjxLRaNcaDVGSsmWeiNuhidXg==}
     engines: {node: '>=18'}
 
+  '@ts-graphviz/adapter@2.0.6':
+    resolution: {integrity: sha512-kJ10lIMSWMJkLkkCG5gt927SnGZcBuG0s0HHswGzcHTgvtUe7yk5/3zTEr0bafzsodsOq5Gi6FhQeV775nC35Q==}
+    engines: {node: '>=18'}
+
   '@ts-graphviz/ast@2.0.5':
     resolution: {integrity: sha512-HVT+Bn/smDzmKNJFccwgrpJaEUMPzXQ8d84JcNugzTHNUVgxAIe2Vbf4ug351YJpowivQp6/N7XCluQMjtgi5w==}
+    engines: {node: '>=18'}
+
+  '@ts-graphviz/ast@2.0.6':
+    resolution: {integrity: sha512-JbOnw6+Pm+C9jRQlNV+qJG0/VTan4oCeZ0sClm++SjaaMBJ0q86O13i6wbcWKY2x8kKt9GP2hVCgM/p/BXtXWQ==}
     engines: {node: '>=18'}
 
   '@ts-graphviz/common@2.1.4':
     resolution: {integrity: sha512-PNEzOgE4vgvorp/a4Ev26jVNtiX200yODoyPa8r6GfpPZbxWKW6bdXF6xWqzMkQoO1CnJOYJx2VANDbGqCqCCw==}
     engines: {node: '>=18'}
 
+  '@ts-graphviz/common@2.1.5':
+    resolution: {integrity: sha512-S6/9+T6x8j6cr/gNhp+U2olwo1n0jKj/682QVqsh7yXWV6ednHYqxFw0ZsY3LyzT0N8jaZ6jQY9YD99le3cmvg==}
+    engines: {node: '>=18'}
+
   '@ts-graphviz/core@2.0.5':
     resolution: {integrity: sha512-YwaCGAG3Hs0nhxl+2lVuwuTTAK3GO2XHqOGvGIwXQB16nV858rrR5w2YmWCw9nhd11uLTStxLsCAhI9koWBqDA==}
+    engines: {node: '>=18'}
+
+  '@ts-graphviz/core@2.0.6':
+    resolution: {integrity: sha512-0hvrluFirC0ph3Dn2o1B0O1fI2n7Hre1HlScfmRcO6DDDq/05Vizg5UMI0LfvkJulLuz80RPjUHluh+QfBUBKw==}
     engines: {node: '>=18'}
 
   '@tsparticles/basic@3.5.0':
@@ -4901,8 +4917,8 @@ packages:
   trough@2.2.0:
     resolution: {integrity: sha512-tmMpK00BjZiUyVyvrBK7knerNgmgvcV/KLVyuma/SC+TQN167GrMRciANTz09+k3zW8L8t60jWO1GpfkZdjTaw==}
 
-  ts-graphviz@2.1.4:
-    resolution: {integrity: sha512-0g465/ES70H0h5rcLUqaenKqNYekQaR9W0m0xUGy3FxueGujpGr+0GN2YWlgLIYSE2Xg0W7Uq1Qqnn7Cg+Af2w==}
+  ts-graphviz@2.1.5:
+    resolution: {integrity: sha512-IigMCo40QZvyyURRdYFh0DV6DGDt7OqkPM/TBGXSJKfNKnYmOfRg0tzSlnJS1TQCWFSTEtpBQsqmAZcziXJrWg==}
     engines: {node: '>=18'}
 
   tslib@2.8.0:
@@ -7370,16 +7386,31 @@ snapshots:
     dependencies:
       '@ts-graphviz/common': 2.1.4
 
+  '@ts-graphviz/adapter@2.0.6':
+    dependencies:
+      '@ts-graphviz/common': 2.1.5
+
   '@ts-graphviz/ast@2.0.5':
     dependencies:
       '@ts-graphviz/common': 2.1.4
 
+  '@ts-graphviz/ast@2.0.6':
+    dependencies:
+      '@ts-graphviz/common': 2.1.5
+
   '@ts-graphviz/common@2.1.4': {}
+
+  '@ts-graphviz/common@2.1.5': {}
 
   '@ts-graphviz/core@2.0.5':
     dependencies:
       '@ts-graphviz/ast': 2.0.5
       '@ts-graphviz/common': 2.1.4
+
+  '@ts-graphviz/core@2.0.6':
+    dependencies:
+      '@ts-graphviz/ast': 2.0.6
+      '@ts-graphviz/common': 2.1.5
 
   '@tsparticles/basic@3.5.0':
     dependencies:
@@ -11465,12 +11496,12 @@ snapshots:
 
   trough@2.2.0: {}
 
-  ts-graphviz@2.1.4:
+  ts-graphviz@2.1.5:
     dependencies:
-      '@ts-graphviz/adapter': 2.0.5
-      '@ts-graphviz/ast': 2.0.5
-      '@ts-graphviz/common': 2.1.4
-      '@ts-graphviz/core': 2.0.5
+      '@ts-graphviz/adapter': 2.0.6
+      '@ts-graphviz/ast': 2.0.6
+      '@ts-graphviz/common': 2.1.5
+      '@ts-graphviz/core': 2.0.6
 
   tslib@2.8.0: {}
 
