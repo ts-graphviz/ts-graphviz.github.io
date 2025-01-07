@@ -17,8 +17,6 @@ const G = digraph('G', (g) => {
   g.node('A', { [_.color]: 'red' });
   g.edge(['A', 'B'], { [_.label]: 'A to B' });
 });
-
-console.log(toDot(G));
 ```
 
 :::tip
@@ -44,7 +42,7 @@ console.log(toDot(G));
 **示例：**
 
 ```typescript
-import { Digraph, Node, Edge } from 'ts-graphviz';
+import { Digraph, Node, Edge, toDot } from 'ts-graphviz';
 
 const G = new Digraph('G');
 
