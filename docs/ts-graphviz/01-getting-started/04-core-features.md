@@ -43,7 +43,7 @@ In addition to the declarative style, `ts-graphviz` offers an object-oriented AP
 **Example:**
 
 ```typescript
-import { Digraph, Node, Edge } from 'ts-graphviz';
+import { Digraph, Node, Edge, toDot } from 'ts-graphviz';
 
 const G = new Digraph('G');
 

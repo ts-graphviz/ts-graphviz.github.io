@@ -40,7 +40,7 @@ const G = digraph('G', (g) => {
 **例:**
 
 ```typescript
-import { Digraph, Node, Edge } from 'ts-graphviz';
+import { Digraph, Node, Edge, toDot } from 'ts-graphviz';
 
 const G = new Digraph('G');
 

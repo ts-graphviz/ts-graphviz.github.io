@@ -9,3 +9,9 @@ release:
   permalink: /release
   description: |
     Stay up to date with the latest releases of ts-graphviz libraries.
+
+website:
+  label: Website
+  permalink: /website
+  description: |
+    Updates and news about the ts-graphviz website.
