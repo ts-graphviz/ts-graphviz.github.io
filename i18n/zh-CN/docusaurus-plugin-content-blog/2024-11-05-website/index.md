@@ -6,7 +6,7 @@ authors:
     title: 翻译协助
 tags: [website]
 description: |-
-  宣布推出新的 ts-graphviz 网站！探索全面的文档、教程以及我们新的交互式 PlayGround——所有内容均提供英文和日文版本——以提升您使用 ts-graphviz 的图形可视化项目。
+  宣布推出新的 ts-graphviz 网站！ 通过利用全面的文档、教程和新的互动游戏场（有英语、日语），ts-graphviz 可以增强你的图形可视化项目。
 ---
 # 宣布推出新的 ts-graphviz 网站！🌐
 

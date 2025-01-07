@@ -5,7 +5,7 @@ description: 了解 ts-graphviz，这是一个用于 Graphviz 的 TypeScript 库
 
 ## 什么是 Graphviz？
 
-[Graphviz](https://graphviz.org/) 是一个开源的图形可视化软件，允许您将结构化信息表示为抽象图和网络的图表。它使用一种称为 DOT 的语言来描述节点、边及其关系，然后可以将其渲染为各种图形格式，如 PNG、SVG、PDF 等。Graphviz 在学术界和工业界被广泛用于可视化复杂结构，如层级结构、数据流和状态机。
+[Graphviz](https://graphviz.org/) 是一个开源的图形可视化软件，允许您将结构化信息表示为抽象图和网络的图表。它使用一种称为 DOT 的语言来描述节点、边及其关系，然后可以将其渲染为各种图形格式，如 PNG、SVG、PDF 等。Graphviz 在学术界和工业界被广泛用于可视化复杂结构，如层级结构、数据流和状态机。如层次结构、数据流和状态转换图。
 
 <div align="center">
 

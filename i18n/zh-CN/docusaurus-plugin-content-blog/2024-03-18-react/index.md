@@ -6,7 +6,7 @@ authors:
     title: 翻译协助
 tags: [release]
 description: |-
-  发现 ts-graphviz 的激动人心的更新！我们集成了 @ts-graphviz/react，增加了对 React 18 的支持，增强了 HTMLLikeLabel 支持，并改进了 API。了解这些更改如何使您的图形可视化项目受益。
+  令人兴奋的ts-graphviz 更新！ 我们集成了 @ts-graphviz/react，添加了对 React 18 的支持，增强了对 HTMLLikeLabel 的支持，并改进了API。 看看这些变化如何帮助您的图形可视化项目。
 ---
 # ts-graphviz 社区的激动人心的消息！🎉
 

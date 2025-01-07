@@ -10,8 +10,8 @@ description: |-
 ---
 # 社区协作推动 ts-graphviz/setup-graphviz 发展 🌟
 
-大家好，ts-graphviz 社区！
-我们很高兴地宣布 setup-graphviz 的最新版本发布，分别是 v2.0.1 和 v2.0.2。
+ts-graphviz 社区的各位，还好吗？
+我们很高兴地宣布 setup-graphviz 的最新版本发布了，分别是 v2.0.1 和 v2.0.2。
 
 <!-- truncate -->
 
@@ -27,4 +27,4 @@ description: |-
 
 有关发布的更多详细信息，请访问：[ts-graphviz/setup-graphviz Releases](https://github.com/ts-graphviz/setup-graphviz/releases)
 
-让我们继续一起实现伟大的成就！🚀
+让我们继续创造伟大！🚀

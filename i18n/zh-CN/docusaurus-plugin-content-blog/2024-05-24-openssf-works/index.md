@@ -11,15 +11,15 @@ description: |-
 # 利用 OpenSSF 保护和确保 ts-graphviz 发布 🛡️
 
 ## 📅 介绍
-2024 年 5 月 24 日，在日本的 Nextbeat Tech Bar 举办的 ["首次库开发讨论"](https://nextbeat.connpass.com/event/312789/) 活动中，我进行了题为 **“安全库开发”** 的短讲（LT）。
+2024 年 5 月 24 日，由日本Nextbeat Tech Bar举办的 ["首次库开发讨论"](https://nextbeat.connpass.com/event/312789/) 活动中，我进行了题为 **"安全库开发"** 的主题演讲。
 
-原始演示文稿是日语的，本文将内容分享为英文，以扩大我们的努力范围，覆盖更广泛的受众。
+原文为日语，本文将内容分享为中文，希望对您有所帮助。
 
 <!-- truncate -->
 
 ## 🔍 发现 OpenSSF
 [开源安全基金会 (OpenSSF)](https://openssf.org/) 于 2020 年在 [Linux 基金会](https://www.linuxfoundation.org/) 下成立。
-其使命是确保开源软件（OSS）开发、维护和使用的可持续安全性。我们在为 ts-graphviz 寻求安全措施时发现了 OpenSSF，并认为其倡议高度相关。
+其使命是确保开源软件（OSS）开发、维护和使用的可持续安全性。我们在为 ts-graphviz 寻求安全措施时注意到了 OpenSSF，并赞同其倡议。
 
 ![OpenSSF](https://openssf.org/wp-content/uploads/2023/04/Layer-13.png)
 
@@ -65,7 +65,7 @@ Scorecard 是一个 CLI 工具，可以自动检查和评估安全风险。它�
 
 ![](./slides/3.png)
 
-虽然我很高兴看到我的库被使用，但这也引发了担忧。
+我很高兴看到我开发的库被很多人使用，但同时我也有所担忧。
 现代应用程序依赖于许多开源库，即使是像我这样的冷门库中的一个小漏洞也可能产生广泛影响。
 因此，库开发中的安全性至关重要。
 

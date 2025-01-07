@@ -6,7 +6,7 @@ description: 探索用于图表创建和操作的核心 API。
 
 ## TypeScript 友好型 API
 
-`ts-graphviz` 提供了与 TypeScript 无缝集成的 API，提供强类型定义和完整的 IntelliSense 支持。这使得在开发过程中更容易捕捉错误，并提升了开发者的体验。
+`ts-graphviz` 提供了与 TypeScript 无缝集成的 API，具有强大的类型定义和完整的 IntelliSense 支持。这使得在开发过程中更容易发现错误，并改善了开发人员的体验。
 
 **游乐场：**
 
@@ -27,7 +27,7 @@ console.log(toDot(G));
 
 **解释：**
 
-- **强类型**：TypeScript 的类型系统通过确保使用正确的类型，帮助防止错误。
+- **强类型**：TypeScript 类型系统可确保使用正确的类型并防止错误。
 - **IntelliSense 支持**：如 Visual Studio Code 等代码编辑器可以提供自动完成和文档提示。
 
 ### 面向对象的模型

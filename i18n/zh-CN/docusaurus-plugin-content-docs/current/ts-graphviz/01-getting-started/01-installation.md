@@ -5,7 +5,7 @@ description: 如何安装 ts-graphviz 并快速开始创建图表。
 
 ## Node.js
 
-然后可以使用包管理器安装此包。
+可以使用包管理器安装此包。
 
 ```bash npm2yarn
 npm install ts-graphviz

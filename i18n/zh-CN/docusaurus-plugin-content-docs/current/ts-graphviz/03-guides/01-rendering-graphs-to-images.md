@@ -61,7 +61,7 @@ await toFile(dot, './result.svg', { format: 'svg' });
 
 - **执行 `dot` 命令**：适配器提供的函数内部执行 `dot` 命令，使用提供的 DOT 字符串和选项。
 - **输出格式**：通过选项指定所需的输出格式（例如 `svg`、`png`）。
-- **运行时兼容性**：旨在在 Node.js 和 Deno 环境中无缝工作。
+- **运行时兼容性**：设计用于在 Node.js 和 Deno 环境中无缝运行。
 
 ## 何时使用 `ts-graphviz/adapter` 模块
 
