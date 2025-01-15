@@ -1,6 +1,6 @@
 # Website
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
@@ -59,6 +59,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/kamiazya"><img src="https://avatars.githubusercontent.com/u/35218186?v=4?s=100" width="100px;" alt="Yuki Yamazaki"/><br /><sub><b>Yuki Yamazaki</b></sub></a><br /><a href="#content-kamiazya" title="Content">🖋</a> <a href="https://github.com/ts-graphviz/ts-graphviz.github.io/commits?author=kamiazya" title="Documentation">📖</a> <a href="#blog-kamiazya" title="Blogposts">📝</a> <a href="#maintenance-kamiazya" title="Maintenance">🚧</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/hao2013"><img src="https://avatars.githubusercontent.com/u/67059492?v=4?s=100" width="100px;" alt="hao2013"/><br /><sub><b>hao2013</b></sub></a><br /><a href="#translation-hao2013" title="Translation">🌍</a> <a href="https://github.com/ts-graphviz/ts-graphviz.github.io/pulls?q=is%3Apr+reviewed-by%3Ahao2013" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
