@@ -34,7 +34,7 @@ ts-graphviz是一个强大的工具，能够轻松将图形可视化集成到Typ
 
 请查看新的中文文档，体验ts-graphviz的便利！
 
-[查看新的中文文档](/zh-CN/)
+[查看新的中文文档](https://ts-graphviz.github.io/zh-CN/)
 
 感谢您的支持与合作。让我们一起继续成长ts-graphviz！🌈
 

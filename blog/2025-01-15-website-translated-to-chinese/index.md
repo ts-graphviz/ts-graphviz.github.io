@@ -30,7 +30,7 @@ We will continue to make further improvements and provide support to ensure that
 
 Please check out the new Chinese documentation and experience the convenience of ts-graphviz!
 
-[Check out the new Chinese documentation here](/zh-CN/)
+[Check out the new Chinese documentation here](https://ts-graphviz.github.io/zh-CN/)
 
 We appreciate your support and cooperation. Let’s continue to grow ts-graphviz together! 🌈
 
