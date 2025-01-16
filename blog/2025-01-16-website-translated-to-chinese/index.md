@@ -18,7 +18,8 @@ We are thrilled to announce that we have successfully translated the ts-graphviz
 
 ## Reason for Translation 📈
 
-Based on our analysis with Google Analytics, we found that the highest number of accesses, outside of the United States and Japan (Yuki, the author of ts-graphviz's home country), were from China. In response to this data, we decided to translate the documentation into Chinese to allow the developer community in China to utilize ts-graphviz more widely.
+Based on our analysis with Google Analytics, we found that the highest number of accesses, after the United States and Japan (Yuki, the author of ts-graphviz's home country), were from China.
+In response to this data, we decided to translate the documentation into Chinese to allow the developer community in China to utilize ts-graphviz more widely.
 
 ## Translation Process and Collaboration 🤝
 
@@ -30,7 +31,7 @@ ts-graphviz is a powerful tool that easily integrates graph visualization into T
 
 ## Future Outlook 🚀
 
-We will continue to make further improvements and provide support to ensure that ts-graphviz becomes an indispensable tool for developers worldwide, including in China. We welcome feedback and contributions from the community, so please feel free to share your thoughts and suggestions.
+We will continue to make improvements and provide support to ensure that ts-graphviz becomes an indispensable tool for developers worldwide, including in China. We welcome feedback and contributions from the community, so please feel free to share your thoughts and suggestions.
 
 Please check out the new Chinese documentation and experience the convenience of ts-graphviz!
 
