@@ -1,5 +1,9 @@
 ---
-authors: kamiazya
+authors:
+  - key: kamiazya
+    title: Original Author
+  - key: hao
+    title: Translation Assistant
 tags: [website]
 description: |-
   Translated the ts-graphviz documentation into Chinese. Based on Google Analytics data showing high access from China, the translation was carried out with Hao's collaboration. Aiming to increase ts-graphviz usage and further development in China.
