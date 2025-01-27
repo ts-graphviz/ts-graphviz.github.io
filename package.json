@@ -33,7 +33,7 @@
     "@monaco-editor/react": "^4.6.0",
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
-    "@tsparticles/slim": "^3.5.0",
+    "@tsparticles/slim": "^3.8.0",
     "@webcontainer/api": "^1.5.1",
     "clsx": "^2.0.0",
     "monaco-editor": "^0.52.2",
