@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://ts-graphviz.github.io/ja/blog</id>
+    <title>ts-graphviz Blog</title>
+    <updated>2025-01-16T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://ts-graphviz.github.io/ja/blog"/>
+    <subtitle>ts-graphviz Blog</subtitle>
+    <icon>https://ts-graphviz.github.io/ja/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[ts-graphvizドキュメントを中国語に翻訳しました！🌏]]></title>
+        <id>https://ts-graphviz.github.io/ja/blog/2025/01/16/website-translated-to-chinese</id>
+        <link href="https://ts-graphviz.github.io/ja/blog/2025/01/16/website-translated-to-chinese"/>
+        <updated>2025-01-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ts-graphvizのドキュメントを中国語に翻訳しました。Google Analyticsの分析で中国からのアクセスが多かったことを受け、Haoの協力を得て翻訳作業を進めました。中国でのts-graphvizの利用増加とさらなる発展を目指しています。]]></summary>
+        <content type="html"><![CDATA[<p>皆さん、こんにちは！</p>
+<p>私たちは、ts-graphvizのドキュメントを遂に中国語に翻訳したことをお知らせできることを大変嬉しく思います！🚀</p>
+<h2 class="anchor anchorTargetStickyNavbar_yKkm" id="翻訳のきっかけ-">翻訳のきっかけ 📈<a href="https://ts-graphviz.github.io/ja/blog/2025/01/16/website-translated-to-chinese#%E7%BF%BB%E8%A8%B3%E3%81%AE%E3%81%8D%E3%81%A3%E3%81%8B%E3%81%91-" class="hash-link" aria-label="翻訳のきっかけ 📈 への直接リンク" title="翻訳のきっかけ 📈 への直接リンク" translate="no">​</a></h2>
+<p>Google Analyticsの分析結果から、アメリカや日本（ts-graphvizの作者であるYukiの母国）以外で最も多くアクセスがある国が中国であることが判明しました。このデータを受け、中国の開発者コミュニティにもts-graphvizをより広く利用していただくために、ドキュメントの中国語翻訳を決定しました。</p>
+<h2 class="anchor anchorTargetStickyNavbar_yKkm" id="翻訳プロセスと協力-">翻訳プロセスと協力 🤝<a href="https://ts-graphviz.github.io/ja/blog/2025/01/16/website-translated-to-chinese#%E7%BF%BB%E8%A8%B3%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9%E3%81%A8%E5%8D%94%E5%8A%9B-" class="hash-link" aria-label="翻訳プロセスと協力 🤝 への直接リンク" title="翻訳プロセスと協力 🤝 への直接リンク" translate="no">​</a></h2>
+<p>翻訳作業は、私たちの信頼できる協力者であるHaoの助けを借りて進められました。Haoの豊富な翻訳経験と技術的な知識が、このプロジェクトを円滑に進める上で大いに役立ちました。彼の協力により、ts-graphvizの使いやすさと理解しやすさを中国語話者の皆さんにも提供できるようになりました。</p>
+<h2 class="anchor anchorTargetStickyNavbar_yKkm" id="中国でのts-graphvizの利用増加を願って-">中国でのts-graphvizの利用増加を願って 🌟<a href="https://ts-graphviz.github.io/ja/blog/2025/01/16/website-translated-to-chinese#%E4%B8%AD%E5%9B%BD%E3%81%A7%E3%81%AEts-graphviz%E3%81%AE%E5%88%A9%E7%94%A8%E5%A2%97%E5%8A%A0%E3%82%92%E9%A1%98%E3%81%A3%E3%81%A6-" class="hash-link" aria-label="中国でのts-graphvizの利用増加を願って 🌟 への直接リンク" title="中国でのts-graphvizの利用増加を願って 🌟 への直接リンク" translate="no">​</a></h2>
+<p>ts-graphvizは、グラフの可視化をTypeScriptプロジェクトに簡単に統合できる強力なツールです。中国の開発者コミュニティでもこのツールが広く利用され、プロジェクトの可視化がさらに効率的になることを願っています。翻訳されたドキュメントが、言語の壁を越えて多くのユーザーにとって有益なリソースとなることを期待しています。</p>
+<h2 class="anchor anchorTargetStickyNavbar_yKkm" id="今後の展望-">今後の展望 🚀<a href="https://ts-graphviz.github.io/ja/blog/2025/01/16/website-translated-to-chinese#%E4%BB%8A%E5%BE%8C%E3%81%AE%E5%B1%95%E6%9C%9B-" class="hash-link" aria-label="今後の展望 🚀 への直接リンク" title="今後の展望 🚀 への直接リンク" translate="no">​</a></h2>
+<p>私たちは、ts-graphvizが中国を含む世界中の開発者にとって不可欠なツールとなるよう、さらなる改善とサポートを続けていきます。コミュニティの皆さんからのフィードバックや貢献を歓迎しますので、ぜひご意見やご提案をお寄せください。</p>
+<p>新しい中国語ドキュメントをぜひご覧いただき、ts-graphvizの利便性を体験してください！</p>
+<p><a href="https://ts-graphviz.github.io/zh-CN/" target="_blank" rel="noopener noreferrer" class="">新しい中国語ドキュメントはこちら</a></p>
+<p>皆さんのご支持とご協力に感謝します。これからも一緒にts-graphvizを成長させていきましょう！🌈</p>
+<p>ありがとうございました！</p>
+<p>ts-graphvizチーム ❤️</p>]]></content>
+        <author>
+            <name>Yuki Yamazaki</name>
+            <uri>https://github.com/kamiazya</uri>
+        </author>
+        <category label="Website" term="Website"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[新しい ts-graphviz ウェブサイトの公開をお知らせします！🌐]]></title>
+        <id>https://ts-graphviz.github.io/ja/blog/2024/11/05/website</id>
+        <link href="https://ts-graphviz.github.io/ja/blog/2024/11/05/website"/>
+        <updated>2024-11-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[新しい ts-graphviz ウェブサイトの公開をお知らせします！英語と日本語で提供される包括的なドキュメント、チュートリアル、新しいインタラクティブなプレイグラウンドを活用して、ts-graphviz でグラフ可視化プロジェクトを強化しましょう。]]></summary>
+        <content type="html"><![CDATA[<p>新しい ts-graphviz のウェブサイトを公開しましたことをお知らせいたします。英語と日本語の両方に対応しています！🚀</p>
+<h2 class="anchor anchorTargetStickyNavbar_yKkm" id="新機能のご紹介-">新機能のご紹介 🎉<a href="https://ts-graphviz.github.io/ja/blog/2024/11/05/website#%E6%96%B0%E6%A9%9F%E8%83%BD%E3%81%AE%E3%81%94%E7%B4%B9%E4%BB%8B-" class="hash-link" aria-label="新機能のご紹介 🎉 への直接リンク" title="新機能のご紹介 🎉 への直接リンク" translate="no">​</a></h2>
+<ul>
+<li class="">
+<p><strong>包括的なドキュメント</strong>: 新しいウェブサイトでは、ts-graphviz を迅速かつ効率的に始めるための詳細なドキュメントを提供しています。ガイド、チュートリアル、API リファレンスなど、英語と日本語の両方でご覧いただけます。</p>
+</li>
+<li class="">
+<p><strong>ユーザーフレンドリーなインターフェース</strong>: 使いやすさを重視したデザインで、必要な情報をこれまで以上に簡単に見つけることができます。</p>
+</li>
+<li class="">
+<p><strong>チュートリアルと例</strong>: ts-graphviz を使用して複雑なグラフや可視化を作成する方法を学べる実践的なチュートリアルと例をご覧ください。</p>
+</li>
+<li class="">
+<p><strong>プレイグラウンド 機能</strong>: ブラウザ上で直接 DOT グラフを記述・可視化できるインタラクティブな プレイグラウンド を導入しました。コードを試し、即座にプレビューを確認し、インストールなしで学習できます。</p>
+</li>
+<li class="">
+<p><strong>バイリンガルサポート</strong>: グローバルなコミュニティに対応するため、ウェブサイト全体が英語と日本語の両方で利用可能になりました。言語を簡単に切り替えて、お好みの言語でコンテンツをお楽しみください。</p>
+</li>
+<li class="">
+<p><strong>コミュニティとの連携</strong>: 最新のニュース、アップデート、コミュニティの貢献をチェックしましょう。他の開発者とつながり、あなたの経験を共有してください。</p>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_yKkm" id="ぜひご訪問ください">ぜひご訪問ください！🌟<a href="https://ts-graphviz.github.io/ja/blog/2024/11/05/website#%E3%81%9C%E3%81%B2%E3%81%94%E8%A8%AA%E5%95%8F%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84" class="hash-link" aria-label="ぜひご訪問ください！🌟 への直接リンク" title="ぜひご訪問ください！🌟 への直接リンク" translate="no">​</a></h2>
+<p>新しいウェブサイト <a href="https://ts-graphviz.github.io/" target="_blank" rel="noopener noreferrer" class="">https://ts-graphviz.github.io</a> をご覧いただき、ts-graphviz があなたのグラフ可視化プロジェクトをどのように強化できるかをお確かめください。</p>
+<p>皆様からのフィードバックをお待ちしております。この新しいプラットフォームが ts-graphviz のご利用をさらに充実させることを願っております。</p>
+<p>引き続きご支援のほどよろしくお願いいたします！</p>]]></content>
+        <author>
+            <name>Yuki Yamazaki</name>
+            <uri>https://github.com/kamiazya</uri>
+        </author>
+        <category label="Website" term="Website"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[OpenSSF の取り組みを活用して ts-graphviz を保護し、セキュリティを強化しました🛡️]]></title>
+        <id>https://ts-graphviz.github.io/ja/blog/2024/05/24/openssf-works</id>
+        <link href="https://ts-graphviz.github.io/ja/blog/2024/05/24/openssf-works"/>
+        <updated>2024-05-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ts-graphviz がオープンソースセキュリティ財団（OpenSSF）の取り組みを活用してセキュリティを強化する方法を解説します。ユーザーにとって安全な開発環境を確保するために、ts-graphviz エコシステムで実施された保護とセキュリティ対策を紹介します。]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorTargetStickyNavbar_yKkm" id="-はじめに">📅 はじめに<a href="https://ts-graphviz.github.io/ja/blog/2024/05/24/openssf-works#-%E3%81%AF%E3%81%98%E3%82%81%E3%81%AB" class="hash-link" aria-label="📅 はじめに への直接リンク" title="📅 はじめに への直接リンク" translate="no">​</a></h2>
+<p>2024年5月24日、日本で開催された Nextbeat Tech Bar の<a href="https://nextbeat.connpass.com/event/312789/" target="_blank" rel="noopener noreferrer" class="">第一回ライブラリ開発について考える会</a>にて、「セキュアなライブラリ開発」というタイトルで LT を行いました。</p>
+<h2 class="anchor anchorTargetStickyNavbar_yKkm" id="-openssf-の発見">🔍 OpenSSF の発見<a href="https://ts-graphviz.github.io/ja/blog/2024/05/24/openssf-works#-openssf-%E3%81%AE%E7%99%BA%E8%A6%8B" class="hash-link" aria-label="🔍 OpenSSF の発見 への直接リンク" title="🔍 OpenSSF の発見 への直接リンク" translate="no">​</a></h2>
+<p><a href="https://openssf.org/" target="_blank" rel="noopener noreferrer" class="">Open Source Security Foundation (OpenSSF)</a> は、<a href="https://www.linuxfoundation.org/" target="_blank" rel="noopener noreferrer" class="">Linux Foundation</a> の下で 2020 年に設立されました。
+その使命は、OSS の開発、保守、利用の持続可能な安全性を確保することです。ts-graphviz のセキュリティ対策を模索する中で、OpenSSF を発見し、その取り組みが非常に有用であることがわかりました。</p>
+<p><img decoding="async" loading="lazy" src="https://openssf.org/wp-content/uploads/2023/04/Layer-13.png" alt="OpenSSF" class="img_Rc6I"></p>
+<h2 class="anchor anchorTargetStickyNavbar_yKkm" id="️-セキュリティ対策の実装">🛠️ セキュリティ対策の実装<a href="https://ts-graphviz.github.io/ja/blog/2024/05/24/openssf-works#%EF%B8%8F-%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E5%AF%BE%E7%AD%96%E3%81%AE%E5%AE%9F%E8%A3%85" class="hash-link" aria-label="🛠️ セキュリティ対策の実装 への直接リンク" title="🛠️ セキュリティ対策の実装 への直接リンク" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_yKkm" id="-openssf-ガイド">📚 OpenSSF ガイド<a href="https://ts-graphviz.github.io/ja/blog/2024/05/24/openssf-works#-openssf-%E3%82%AC%E3%82%A4%E3%83%89" class="hash-link" aria-label="📚 OpenSSF ガイド への直接リンク" title="📚 OpenSSF ガイド への直接リンク" translate="no">​</a></h3>
+<p>OpenSSF ガイドは、OSS のセキュリティを向上させるための包括的なガイドラインを提供します。npm や C/C++ のコンパイラオプションなどの特定の技術向けのガイドや、ソースコード管理設定、脆弱性開示プロセスなどのニッチなトピックも含まれています。これらのガイドは、OSS 開発者だけでなくユーザーにとっても価値があります。</p>
+<h3 class="anchor anchorTargetStickyNavbar_yKkm" id="-openssf-ベストプラクティスバッジ">🏅 OpenSSF ベストプラクティスバッジ<a href="https://ts-graphviz.github.io/ja/blog/2024/05/24/openssf-works#-openssf-%E3%83%99%E3%82%B9%E3%83%88%E3%83%97%E3%83%A9%E3%82%AF%E3%83%86%E3%82%A3%E3%82%B9%E3%83%90%E3%83%83%E3%82%B8" class="hash-link" aria-label="🏅 OpenSSF ベストプラクティスバッジ への直接リンク" title="🏅 OpenSSF ベストプラクティスバッジ への直接リンク" translate="no">​</a></h3>
+<p>OSS 開発者は、セキュリティに関連する質問に答え、ベストプラクティスに従うことで、プロジェクトを自己認証できます。これらの基準を満たすことで、パッケージのセキュリティを高めることができます。OSS ユーザーは、プロジェクトがベストプラクティスに従っているかを評価し、より安全な OSS を選択するのに役立ちます。</p>
+<h3 class="anchor anchorTargetStickyNavbar_yKkm" id="-openssf-スコアカード">🔍 OpenSSF スコアカード<a href="https://ts-graphviz.github.io/ja/blog/2024/05/24/openssf-works#-openssf-%E3%82%B9%E3%82%B3%E3%82%A2%E3%82%AB%E3%83%BC%E3%83%89" class="hash-link" aria-label="🔍 OpenSSF スコアカード への直接リンク" title="🔍 OpenSSF スコアカード への直接リンク" translate="no">​</a></h3>
+<p>スコアカードは、セキュリティリスクを自動的にチェックし評価する CLI ツールです。GitHub Actions などの CI ツールと統合して継続的な評価が可能で、スコアはレポートとして公開されます。GitHub Actions 上で10分以内にインストールできます。</p>
+<h2 class="anchor anchorTargetStickyNavbar_yKkm" id="-利点と成果">🚀 利点と成果<a href="https://ts-graphviz.github.io/ja/blog/2024/05/24/openssf-works#-%E5%88%A9%E7%82%B9%E3%81%A8%E6%88%90%E6%9E%9C" class="hash-link" aria-label="🚀 利点と成果 への直接リンク" title="🚀 利点と成果 への直接リンク" translate="no">​</a></h2>
+<p>これらのセキュリティ対策を実装することで、ts-graphviz のセキュリティが大幅に向上しました。他の OSS プロジェクトも同様の対策を採用し、オープンソースコミュニティ全体のセキュリティを向上させることができると信じています。</p>
+<h2 class="anchor anchorTargetStickyNavbar_yKkm" id="-参加とサポートのお願い">🌟 参加とサポートのお願い<a href="https://ts-graphviz.github.io/ja/blog/2024/05/24/openssf-works#-%E5%8F%82%E5%8A%A0%E3%81%A8%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%81%AE%E3%81%8A%E9%A1%98%E3%81%84" class="hash-link" aria-label="🌟 参加とサポートのお願い への直接リンク" title="🌟 参加とサポートのお願い への直接リンク" translate="no">​</a></h2>
+<p>私たちの取り組みを OpenCollective や GitHub Sponsors を通じてご支援いただけますと幸いです。皆さんのご協力が、ts-graphviz のセキュリティ維持と向上に役立ちます。</p>
+<p>LT で使用したスライドと発表者ノートの英語版をご覧ください：</p>
+<ul>
+<li class=""><a href="https://docs.google.com/presentation/d/e/2PACX-1vQKliPNP2Yiqq88xVnTsf944YtWhZY2DvSExc790pYmpthSR30SSxVpp06MMPmD6Ea1TqUfd44tflMI/pub?start=false&amp;loop=false&amp;slide=id.p" target="_blank" rel="noopener noreferrer" class="">Google スライド</a> / (<a href="https://docs.google.com/presentation/d/e/2PACX-1vQAUNsc26XXbmIr2UaR3GtMd-iNADtJebK-FBgyqiNHVZ-1yQBxFuGOLKQohYejXjzm8C-DByC6ecmp/pub?start=false&amp;loop=false&amp;slide=id.p" target="_blank" rel="noopener noreferrer" class="">英語</a>)</li>
+<li class=""><a href="https://speakerdeck.com/kamiazya/sekiyuanaraiburarikai-fa-openssfdeshi-meruosssekiyuriteinoshi-jian-tohuo-yong" target="_blank" rel="noopener noreferrer" class="">Speaker Deck</a> / (<a href="https://speakerdeck.com/kamiazya/secure-library-development-practical-oss-security-with-openssf" target="_blank" rel="noopener noreferrer" class="">英語</a>)</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_yKkm" id="-発表者ノート付きスライド">📄 発表者ノート付きスライド<a href="https://ts-graphviz.github.io/ja/blog/2024/05/24/openssf-works#-%E7%99%BA%E8%A1%A8%E8%80%85%E3%83%8E%E3%83%BC%E3%83%88%E4%BB%98%E3%81%8D%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%89" class="hash-link" aria-label="📄 発表者ノート付きスライド への直接リンク" title="📄 発表者ノート付きスライド への直接リンク" translate="no">​</a></h2>
+<p>詳細な説明をご希望の方は、発表時に使用した発表者ノート付きのスライドをご覧ください。共有された対策や洞察の包括的なビューを提供します。</p>
+<p><img decoding="async" loading="lazy" src="https://ts-graphviz.github.io/ja/assets/images/0-43e010a28f9de5fdd7455cd93f091383.png" width="960" height="540" class="img_Rc6I"></p>
+<p>今日は、OpenSSF の取り組みに焦点を当てた「セキュアなライブラリ開発」についてお話ししたいと思います。</p>
+<p><img decoding="async" loading="lazy" src="https://ts-graphviz.github.io/ja/assets/images/1-7dd36456c785e3a1ecf32fa08a57e2e9.png" width="960" height="540" class="img_Rc6I"></p>
+<p>Yamazki Yuki と申します。よろしくおねがいします。
+GitHub や X(Twitter) では kamiazya というアカウント名で活動しています。</p>
+<p>普段は、株式会社アイリッジでモバイルアプリ開発支援キットの開発保守運用をしています。</p>
+<p><img decoding="async" loading="lazy" src="https://ts-graphviz.github.io/ja/assets/images/2-5e7d7cd9bc7f863c1abc87dc561902e7.png" width="960" height="540" class="img_Rc6I"></p>
+<p>私は、TypeScript に適した Graphviz ラッパーである ts-graphviz を開発し、npm ライブラリとして提供しています。
+これは小規模なライブラリですが、さまざまな OSS プロジェクトで広く利用されており、月間約 200 万ダウンロードを達成しています。</p>
+<p><img decoding="async" loading="lazy" src="https://ts-graphviz.github.io/ja/assets/images/3-403ef6d9a8a37c448ad2273b0230cf80.png" width="960" height="540" class="img_Rc6I"></p>
+<p>自分のライブラリが使用されていることは嬉しいですが、それと同時に懸念もあります。
+現代のアプリケーションは多くのオープンソースライブラリに依存しており、私のような無名のライブラリに小さな脆弱性があっても、広範な影響を及ぼす可能性があります。
+したがって、ライブラリ開発においてセキュリティは重要です。</p>
+<p><img decoding="async" loading="lazy" src="https://ts-graphviz.github.io/ja/assets/images/4-2c8e398a342d6ba2fbe7a205e178b86a.png" width="960" height="540" class="img_Rc6I"></p>
+<p>「自分のライブラリのセキュリティは十分だろうか？」
+「セキュリティ対策はどこから始めればいいのだろうか？」</p>
+<p>セキュリティの知識不足により、ライブラリのセキュリティを評価することが難しかったのです。</p>
+<p><img decoding="async" loading="lazy" src="https://ts-graphviz.github.io/ja/assets/images/5-65c3175568eb8e40fc4221fb5f2d22f2.png" width="960" height="540" class="img_Rc6I"></p>
+<p>セキュリティ対策を深く掘り下げる中で、OpenSSF（Open Source Security Foundation）を発見しました。</p>
+<p>OpenSSF は 2020 年に Linux Foundation の下で設立され、OSS の開発、保守、利用の持続可能な安全性を確保することを目的とし、OSS 自体とそのサプライチェーンを保護するための取り組みを推進しています。</p>
+<p><img decoding="async" loading="lazy" src="https://ts-graphviz.github.io/ja/assets/images/6-5dc8f03b4fd49a57b108821cbdc04287.png" width="960" height="540" class="img_Rc6I"></p>
+<p>この LT では、ts-graphviz プロジェクトで OpenSSF を活用して実装した 3 つのセキュリティ対策を紹介します。これらは他のプロジェクトがセキュリティを改善するための刺激にもなるでしょう。</p>
+<p>OSS ユーザーとして、このプレゼンテーションを通じて OSS のセキュリティ対策を理解することで、より安全なソフトウェアを開発できると信じています。</p>
+<p><img decoding="async" loading="lazy" src="https://ts-graphviz.github.io/ja/assets/images/7-cb38852f0c3d4e0f251ea16847b1a3b3.png" width="960" height="540" class="img_Rc6I"></p>
+<p>最初は OpenSSF ガイドです。</p>
+<p>これは、オープンソースソフトウェアのセキュリティを向上させるための包括的なガイドラインを提供します。
+npm や C/C++ のコンパイラオプションなどの特定の技術向けのガイドや、ソースコード管理設定、脆弱性開示プロセスなどのニッチなトピックも含まれています。</p>
+<p>この内容は、OSS 開発者だけでなくユーザーにとっても有用です。</p>
+<p><img decoding="async" loading="lazy" src="https://ts-graphviz.github.io/ja/assets/images/8-1e159254403d8caa438989e777f2ab60.png" width="960" height="540" class="img_Rc6I"></p>
+<p>2 つ目は OpenSSF ベストプラクティスバッジです。OSS 開発者は、セキュリティに関連する質問に答えることで、プロジェクトを自己認証できます。
+基準を満たすことで、パッケージのセキュリティを高めることができます。</p>
+<p>評価基準は公開されているので、これらの基準を満たすよう努めることで、パッケージのセキュリティを向上させることができます。</p>
+<p><img decoding="async" loading="lazy" src="https://ts-graphviz.github.io/ja/assets/images/9-ed6fc08542dbbb36fb97f6be6e2fe3f3.png" width="960" height="540" class="img_Rc6I"></p>
+<p>OSS ユーザーは、プロジェクトがベストプラクティスに従っているかを評価し、より安全な OSS を選択するのに役立ちます。</p>
+<p>使用したいプロジェクトの安全性を確認することで、より安全な OSS を選択できます。</p>
+<p><img decoding="async" loading="lazy" src="https://ts-graphviz.github.io/ja/assets/images/10-860713d9b48da35d70ecf0773631d9d0.png" width="960" height="540" class="img_Rc6I"></p>
+<p>3 つ目は OpenSSF スコアカードです。
+この CLI ツールは、セキュリティリスクを自動的にチェックし評価します。
+GitHub Actions などの CI ツールと統合して継続的な評価が可能で、スコアはレポートとして公開されます。
+GitHub Actions 上で 10 分以内にインストールできます。</p>
+<p><img decoding="async" loading="lazy" src="https://ts-graphviz.github.io/ja/assets/images/11-e4b343b5c897da480e809c03108147d4.png" width="960" height="540" class="img_Rc6I"></p>
+<p>OpenSSF は他にもさまざまなプロジェクトを推進しています。</p>
+<p><img decoding="async" loading="lazy" src="https://ts-graphviz.github.io/ja/assets/images/12-dbc0b2990e94d3173fb86eecb329998e.png" width="960" height="540" class="img_Rc6I"></p>
+<p>OpenSSF の取り組みを活用することで、ts-graphviz のセキュリティ対策を自信を持って進めることができ、ユーザーにより安全なライブラリを提供できます。</p>
+<p><img decoding="async" loading="lazy" src="https://ts-graphviz.github.io/ja/assets/images/13-1bd12a4fdd6b0323eb6100522c9fad38.png" width="960" height="540" class="img_Rc6I"></p>
+<p>「OpenSSF の取り組みで、より安全なソフトウェアを一緒に作りましょう。」
+今後も OpenSSF の取り組みを活用して、より安全なソフトウェアの開発を続けていきたいと思います。</p>
+<p><img decoding="async" loading="lazy" src="data:image/png;base64,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" width="960" height="540" class="img_Rc6I"></p>
+<p>ご清聴ありがとうございました。</p>
+<p><img decoding="async" loading="lazy" src="https://ts-graphviz.github.io/ja/assets/images/15-a2a142c950806c9632245f900828666a.png" width="960" height="540" class="img_Rc6I"></p>
+<p>詳細については、プレゼンテーション内でリンクされたスライドや追加資料をご参照ください。</p>]]></content>
+        <author>
+            <name>Yuki Yamazaki</name>
+            <uri>https://github.com/kamiazya</uri>
+        </author>
+        <category label="セキュリティ" term="セキュリティ"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ts-graphviz/setup-graphviz の進化を促すコミュニティの協力 🌟]]></title>
+        <id>https://ts-graphviz.github.io/ja/blog/2024/04/25/update-setup-graphviz</id>
+        <link href="https://ts-graphviz.github.io/ja/blog/2024/04/25/update-setup-graphviz"/>
+        <updated>2024-04-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[コミュニティの協力が ts-graphviz/setup-graphviz の進化に果たした重要な役割を紹介します。最近の貢献やアップデート、そして積極的な参加を通じてプロジェクトの未来を形作る方法について解説しています。]]></summary>
+        <content type="html"><![CDATA[<p>ts-graphviz コミュニティの皆さん、こんにちは！
+setup-graphviz の最新リリース、バージョン v2.0.1 と v2.0.2 をお知らせできることを嬉しく思います。</p>
+<p>これらのアップデートは、<a href="https://github.com/actions/runner-images/issues/9733" target="_blank" rel="noopener noreferrer" class="">GitHub Actions ランナーイメージに関連する問題</a>への迅速なコミュニティの対応により可能となりました。</p>
+<h3 class="anchor anchorTargetStickyNavbar_yKkm" id="リリースのハイライト">リリースのハイライト:<a href="https://ts-graphviz.github.io/ja/blog/2024/04/25/update-setup-graphviz#%E3%83%AA%E3%83%AA%E3%83%BC%E3%82%B9%E3%81%AE%E3%83%8F%E3%82%A4%E3%83%A9%E3%82%A4%E3%83%88" class="hash-link" aria-label="リリースのハイライト: への直接リンク" title="リリースのハイライト: への直接リンク" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>v2.0.1</strong>：Linux でのインストール問題を修正し、安定性を向上させました。🛠️</li>
+<li class=""><strong>v2.0.2</strong>：GitHub Actions 環境の更新により不要になったスクリプトを削除しました。🧹</li>
+</ul>
+<p>これらの問題に迅速に対処するために力を合わせてくださった開発者、貢献者、ユーザーの皆さんの献身的な努力とサポートに心から感謝いたします。
+皆さんの協力は非常に貴重であり、ts-graphviz の改善に向けた旅を共に続けていけることを楽しみにしています。</p>
+<p>リリースの詳細については、こちらをご覧ください：<a href="https://github.com/ts-graphviz/setup-graphviz/releases" target="_blank" rel="noopener noreferrer" class="">ts-graphviz/setup-graphviz リリース</a></p>
+<p>これからも一緒に素晴らしいことを成し遂げましょう！🚀</p>]]></content>
+        <author>
+            <name>Yuki Yamazaki</name>
+            <uri>https://github.com/kamiazya</uri>
+        </author>
+        <category label="リリース" term="リリース"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ts-graphviz コミュニティへのエキサイティングなお知らせ！🎉]]></title>
+        <id>https://ts-graphviz.github.io/ja/blog/2024/03/18/react</id>
+        <link href="https://ts-graphviz.github.io/ja/blog/2024/03/18/react"/>
+        <updated>2024-03-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ts-graphviz のエキサイティングなアップデートをご紹介！@ts-graphviz/react の統合、React 18 のサポート追加、HTMLLikeLabel サポートの強化、API の改善を行いました。これらの変更があなたのグラフ可視化プロジェクトにどのように役立つかをご覧ください。]]></summary>
+        <content type="html"><![CDATA[<p>ts-graphviz プロジェクトに関する重要なアップデートを発表できることを嬉しく思います！🚀</p>
+<p>開発体験を向上させ、プロジェクトの機能を拡張するために、皆様のプロジェクトに大きなメリットをもたらすいくつかの重要な変更と改善を行いました。</p>
+<h2 class="anchor anchorTargetStickyNavbar_yKkm" id="新機能のご紹介-">新機能のご紹介 🌟<a href="https://ts-graphviz.github.io/ja/blog/2024/03/18/react#%E6%96%B0%E6%A9%9F%E8%83%BD%E3%81%AE%E3%81%94%E7%B4%B9%E4%BB%8B-" class="hash-link" aria-label="新機能のご紹介 🌟 への直接リンク" title="新機能のご紹介 🌟 への直接リンク" translate="no">​</a></h2>
+<ul>
+<li class=""><strong><code>@ts-graphviz/react</code> の統合</strong>：<code>@ts-graphviz/react</code> パッケージが ts-graphviz リポジトリに完全に統合されました。この統合により、開発プロセスが合理化され、グラフ可視化ツールのより一貫したエコシステムが促進されます。</li>
+<li class=""><strong>React 18 のサポート</strong>： React 18 へのサポートを強化しました。ts-graphviz を React と共に使用する開発者は、React 18 が提供する最新の機能、パフォーマンス向上、最適化を活用できます。</li>
+<li class=""><strong>HTMLLikeLabel サポートの強化</strong>：HTMLLikeLabel に関連する型を @ts-graphviz/common に移動しました。これにより、メンテナンス性が向上し、グラフ内で複雑なラベルを扱う開発者がより簡単に作業できるようになりました。</li>
+<li class=""><strong>API の改善</strong>：使いやすさ、柔軟性、開発者体験を向上させるために、いくつかの API 改善を実施しました。これらの変更は、グラフの可視化を構築・操作する際に、ts-graphviz をさらに強力で直感的なものにすることを目的としています。</li>
+</ul>
+<p>皆様のサポートは、ts-graphviz の開発と成長において重要な役割を果たしています。これらのアップデートは、コミュニティの進化するニーズに応える高品質で革新的なソリューションを提供するという私たちのコミットメントの一環です。</p>
+<p>これらの新機能と改善をぜひお試しください！</p>
+<p>私たちは、グラフ可視化ツールの限界を押し広げ続ける中で、皆様からの継続的なサポートとフィードバックに感謝しています。さらなるアップデートにご期待ください。ご質問やご提案がありましたら、お気軽にお知らせください。</p>
+<p>私たちの旅の一部である皆様に感謝いたします。これからも一緒に素晴らしいものを創り上げていきましょう！🌈</p>]]></content>
+        <author>
+            <name>Yuki Yamazaki</name>
+            <uri>https://github.com/kamiazya</uri>
+        </author>
+        <category label="リリース" term="リリース"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ts-graphviz v2.0.0 リリース 🎉]]></title>
+        <id>https://ts-graphviz.github.io/ja/blog/v2</id>
+        <link href="https://ts-graphviz.github.io/ja/blog/v2"/>
+        <updated>2024-03-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ts-graphviz バージョン 2.0.0 のリリースを発表し、この大規模アップデートで追加された新機能、パフォーマンス向上、重要な変更点を解説します。最新のグラフ可視化の進歩を活用するためのプロジェクトのアップグレード方法についても説明しています。]]></summary>
+        <content type="html"><![CDATA[<p>皆さん、こんにちは！</p>
+<p>ts-graphviz v2.0.0 がリリースされたことをお知らせできることを嬉しく思います！
+このメジャーアップデートには、パフォーマンスの向上、セキュリティの強化、進化する JavaScript エコシステムとの互換性向上を目的とした多数の改善が含まれています。</p>
+<h3 class="anchor anchorTargetStickyNavbar_yKkm" id="主要なアップデート-">主要なアップデート 🚀<a href="https://ts-graphviz.github.io/ja/blog/v2#%E4%B8%BB%E8%A6%81%E3%81%AA%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88-" class="hash-link" aria-label="主要なアップデート 🚀 への直接リンク" title="主要なアップデート 🚀 への直接リンク" translate="no">​</a></h3>
+<ul>
+<li class=""><strong>Node.js 14 &amp; 16 のサポート終了</strong>：最新のライブラリを維持するための取り組みの一環として、サポートする最低 Node.js バージョンを Node.js 18 に更新しました。この決定は、最新の機能と改善を活用しつつ、ユーザーに最高レベルのセキュリティを提供するという目標に沿ったものです。</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_yKkm" id="パッケージの分割とモノレポ化-">パッケージの分割とモノレポ化 📦<a href="https://ts-graphviz.github.io/ja/blog/v2#%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%81%AE%E5%88%86%E5%89%B2%E3%81%A8%E3%83%A2%E3%83%8E%E3%83%AC%E3%83%9D%E5%8C%96-" class="hash-link" aria-label="パッケージの分割とモノレポ化 📦 への直接リンク" title="パッケージの分割とモノレポ化 📦 への直接リンク" translate="no">​</a></h3>
+<p>v2.0.0 では、モジュール性、保守性、使いやすさを向上させるために、ts-graphviz の構造を大幅に再編成しました：</p>
+<ul>
+<li class=""><strong>モジュール性の向上</strong>：ライブラリを複数のパッケージに分割し、必要なものだけをインストールして使用できるようにしました。これにより、不要な依存関係が削減され、パフォーマンスが最適化されます。</li>
+<li class=""><strong>保守性とコラボレーションの容易化</strong>：新しい構造により、保守が簡素化され、開発者が興味のある特定の領域に集中できるため、貢献を促進します。</li>
+<li class=""><strong>集中管理</strong>：モノレポへの移行により、すべてのパッケージにわたる問題追跡、プルリクエスト管理、ドキュメント更新が効率化されます。</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_yKkm" id="nodejs-バージョンサポートポリシー-">Node.js バージョンサポートポリシー 📝<a href="https://ts-graphviz.github.io/ja/blog/v2#nodejs-%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%B5%E3%83%9D%E3%83%BC%E3%83%88%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC-" class="hash-link" aria-label="Node.js バージョンサポートポリシー 📝 への直接リンク" title="Node.js バージョンサポートポリシー 📝 への直接リンク" translate="no">​</a></h3>
+<p>JavaScript エコシステムの進化と当ライブラリのセキュリティと最新性を確保するため、明確な Node.js バージョンサポートポリシーを確立しました：</p>
+<ul>
+<li class="">これからは、各メジャーリリース時点での最新の Node.js LTS バージョンをサポートすることを保証します。ts-graphviz v2.0.0 では <strong>Node.js 18</strong> から開始します。</li>
+<li class="">ポリシーには、サポート終了（EOL）に達した Node.js バージョンのサポート終了も含まれ、ユーザーが可能な限り最も安全で高性能なバージョンを利用できるようにします。</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_yKkm" id="今後に向けて-">今後に向けて 🔍<a href="https://ts-graphviz.github.io/ja/blog/v2#%E4%BB%8A%E5%BE%8C%E3%81%AB%E5%90%91%E3%81%91%E3%81%A6-" class="hash-link" aria-label="今後に向けて 🔍 への直接リンク" title="今後に向けて 🔍 への直接リンク" translate="no">​</a></h3>
+<p>このリリースは、TypeScript プロジェクトで Graphviz DOT 言語を扱うための強力で使いやすいツールを提供する私たちの取り組みにおける重要なマイルストーンです。プロジェクトを最新の Node.js LTS バージョンに更新し、ts-graphviz v2.0.0 の新機能と改善をぜひご活用ください。</p>
+<p>リリースの詳細情報、移行ガイド、新しいパッケージ構造の概要については、<a href="https://github.com/ts-graphviz/ts-graphviz/releases/tag/ts-graphviz%402.0.0" target="_blank" rel="noopener noreferrer" class="">リリースノート</a>をご覧ください。</p>
+<p>皆さんからのフィードバックをお待ちしており、ts-graphviz のさらなる改善に向けて共に取り組んでいきたいと考えています。
+ご支援とご協力に感謝いたします！</p>]]></content>
+        <author>
+            <name>Yuki Yamazaki</name>
+            <uri>https://github.com/kamiazya</uri>
+        </author>
+        <category label="セキュリティ" term="セキュリティ"/>
+        <category label="リリース" term="リリース"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tidelift サブスクリプション 🌱]]></title>
+        <id>https://ts-graphviz.github.io/ja/blog/2024/03/01/tidelift</id>
+        <link href="https://ts-graphviz.github.io/ja/blog/2024/03/01/tidelift"/>
+        <updated>2024-03-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ts-graphviz と Tidelift のパートナーシップにより、サブスクリプションモデルを通じてプロフェッショナルなサポートとメンテナンスが提供される仕組みを解説します。信頼性の高い更新、セキュリティ保証、プロジェクトの長期的な持続可能性など、ユーザーにもたらす利点を詳しく紹介します。]]></summary>
+        <content type="html"><![CDATA[<p>皆さん、こんにちは 👋</p>
+<p>ts-graphviz プロジェクトの中心には、技術的な卓越性を追求し、コミュニティを強化することがあります。プロジェクトの持続可能性と成長をさらにサポートするために、私たちはエキサイティングな段階に踏み出しています。Tidelift とのパートナーシップにより、ts-graphviz はエンタープライズレベルのサポートとセキュリティを提供し、開発者が自信を持って利用できるツールとなります。</p>
+<h3 class="anchor anchorTargetStickyNavbar_yKkm" id="tidelift-サブスクリプションの一部として利用可能-">Tidelift サブスクリプションの一部として利用可能 🤝<a href="https://ts-graphviz.github.io/ja/blog/2024/03/01/tidelift#tidelift-%E3%82%B5%E3%83%96%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E4%B8%80%E9%83%A8%E3%81%A8%E3%81%97%E3%81%A6%E5%88%A9%E7%94%A8%E5%8F%AF%E8%83%BD-" class="hash-link" aria-label="Tidelift サブスクリプションの一部として利用可能 🤝 への直接リンク" title="Tidelift サブスクリプションの一部として利用可能 🤝 への直接リンク" translate="no">​</a></h3>
+<p>ts-graphviz のメンテナーや他の何千ものパッケージのメンテナーが Tidelift と協力し、あなたがアプリケーション構築に使用するオープンソースの依存関係に対して商用サポートとメンテナンスを提供しています。時間を節約し、リスクを低減し、コードの健全性を向上させながら、実際に使用している依存関係のメンテナーに報酬を支払うことができます。</p>
+<p><a href="https://tidelift.com/subscription/pkg/npm-ts-graphviz?utm_source=npm-ts-graphviz&amp;utm_medium=referral&amp;utm_campaign=enterprise&amp;utm_term=repo" target="_blank" rel="noopener noreferrer" class="">詳細はこちら</a>。</p>
+<h3 class="anchor anchorTargetStickyNavbar_yKkm" id="コミュニティへの影響-">コミュニティへの影響 🌈<a href="https://ts-graphviz.github.io/ja/blog/2024/03/01/tidelift#%E3%82%B3%E3%83%9F%E3%83%A5%E3%83%8B%E3%83%86%E3%82%A3%E3%81%B8%E3%81%AE%E5%BD%B1%E9%9F%BF-" class="hash-link" aria-label="コミュニティへの影響 🌈 への直接リンク" title="コミュニティへの影響 🌈 への直接リンク" translate="no">​</a></h3>
+<p>Tidelift との新しいコラボレーションは、ts-graphviz をさまざまなプロジェクトや組織でより広く受け入れられ、信頼されるツールにするための重要な一歩です。また、メンテナンスと開発に必要な資金を確保し、開発者にとってもメリットとなります。</p>
+<h3 class="anchor anchorTargetStickyNavbar_yKkm" id="今後の展望-">今後の展望 🌟<a href="https://ts-graphviz.github.io/ja/blog/2024/03/01/tidelift#%E4%BB%8A%E5%BE%8C%E3%81%AE%E5%B1%95%E6%9C%9B-" class="hash-link" aria-label="今後の展望 🌟 への直接リンク" title="今後の展望 🌟 への直接リンク" translate="no">​</a></h3>
+<p>私たちは、Tidelift とのパートナーシップが ts-graphviz をさらに強化し、コミュニティに価値を提供し続ける機会にとても興奮しています。皆さんからのフィードバックは常に歓迎します。ts-graphviz が提供する価値を最大限に活用するためのご提案やアイデアをぜひお聞かせください。</p>
+<p>この新しい章が、ts-graphviz コミュニティ内でより良い創造とイノベーションへの私たちの共同の旅において、重要な一歩となることを願っています。</p>
+<p>心からの感謝を込めて、
+ts-graphviz チーム ❤️</p>]]></content>
+        <author>
+            <name>Yuki Yamazaki</name>
+            <uri>https://github.com/kamiazya</uri>
+        </author>
+        <category label="セキュリティ" term="セキュリティ"/>
+    </entry>
+</feed>
